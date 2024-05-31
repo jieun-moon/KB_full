@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>textContent와 innerHTML의 차이</title>
+    <script>
+      // 이벤트 연결
+      window.onload = function () {
+        // 변수 초기화
+        // 더해서 할당해 줘야하기때문에 const 사용하면 안되고, let으로!!
+        let output = '';
+        for (let i = 0; i < 10; i++) {
+          // output += `<h1>header-${i} </h1>`;
+          // output =  output + `<h1>header-${i} </h1>`;
+          output += '<h1>Header - ' + i + '<h1>';
+        }
+
+        // textContent: 내부 글자 변경
+        // document.body.textContent = output;
+        document.body.innerHTML = output;
+        // innerHTML: 객체 내부의 요소 변경
+      };
+    </script>
+  </head>
+  <body></body>
+</html>

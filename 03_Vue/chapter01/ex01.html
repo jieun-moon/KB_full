@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 데이터 함수가 리턴하는 객체의 속성을 html 파트에서 그냥 출력시킬 수 있음 -->
+      <h2>{{message}}</h2>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+      let model = { message: 'Hello Vue3!' };
+      let vm = Vue.createApp({
+        name: 'App',
+        data() {
+          return model;
+        },
+      }).mount('#app'); //설정 객체
+    </script>
+  </body>
+</html>

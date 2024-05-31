@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>getElementById로 이미지 속성 변경하기</title>
+    <script>
+      window.onload = function () {
+        let image = document.getElementById('image');
+
+        // 속성 변경
+        image.src =
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa4BEpgp2vNGQxw4xoHe42yo9raBrNkB27fFWtjq6xFg&s';
+
+        // px을 넣으려면 문자열로
+        image.width = 300;
+        image.width = 200;
+      };
+    </script>
+  </head>
+  <body>
+    <img id="image" />
+  </body>
+</html>
