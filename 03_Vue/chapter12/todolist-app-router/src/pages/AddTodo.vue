@@ -66,8 +66,10 @@ const addTodoHandler = () => {
     return;
   }
   // 넣어준 정보를 가지고 목록의 맨 뒤에 추가해줌
-  addTodo({ ...todoItem });
+  addTodo({ ...todoItem }, () => {
+    router.push('/todos');
+  });
   // 전체 목록 페이지로 이동
-  router.push('/todos');
+  // router.push('/todos');
 };
 </script>
