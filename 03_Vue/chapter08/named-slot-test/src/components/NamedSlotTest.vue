@@ -57,5 +57,6 @@ export default {
 </script>
 
 <style>
+/* fontAwesome 아이콘을 사용하기 위해 해당 CSS가져옴 */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
 </style>
