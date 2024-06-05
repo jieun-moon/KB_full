@@ -3,7 +3,7 @@ import { reactive, computed } from 'vue';
 import axios from 'axios';
 import TodoList from '@/pages/TodoList.vue';
 
-export const useTodoListStore = define('todoList', () => {
+export const useTodoListStore = defineStore('todoList', () => {
   const BASEURI = '/api/todos';
   const state = reactive({ todoList: [] });
 

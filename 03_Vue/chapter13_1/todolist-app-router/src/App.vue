@@ -3,7 +3,7 @@
     <Header />
     <!-- 계속 페이지가 바뀌는 부분이 router-view -->
     <router-view />
-    <Loading v-if="states.isLoading" />
+    <Loading v-if="isLoading" />
   </div>
 </template>
 
@@ -12,7 +12,7 @@
 import { computed } from 'vue';
 import Header from '@/components/Header.vue';
 import Loading from '@/components/Loading.vue';
-import { useTodoListStore } from './stores/todoList';
+import { useTodoListStore } from '@/stores/todoList.js';
 // import axios from 'axios';
 
 const todoListStore = useTodoListStore();
