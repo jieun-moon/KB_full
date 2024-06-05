@@ -17,14 +17,14 @@ import axios from 'axios';
 const BASEURI = '/api/todos';
 const states = reactive({ todoList: [] });
 
-const states = reactive({
-  todoList: [
-    { id: 1, todo: 'ES6학습', desc: '설명1', done: false },
-    { id: 2, todo: 'React학습', desc: '설명2', done: false },
-    { id: 3, todo: 'ContextAPI 학습', desc: '설명3', done: true },
-    { id: 4, todo: '야구경기 관람', desc: '설명4', done: false },
-  ],
-});
+// const states = reactive({
+//   todoList: [
+//     { id: 1, todo: 'ES6학습', desc: '설명1', done: false },
+//     { id: 2, todo: 'React학습', desc: '설명2', done: false },
+//     { id: 3, todo: 'ContextAPI 학습', desc: '설명3', done: true },
+//     { id: 4, todo: '야구경기 관람', desc: '설명4', done: false },
+//   ],
+// });
 
 // todo를 추가하는 메소드, todo와 desc가 들어있는 객체를 구조 분해 할당으로 받음
 const addTodo = async ({ todo, desc }, successCallback) => {
@@ -52,9 +52,12 @@ const updateTodo = async ({ id, todo, desc, done }, successCallback) => {
   // 받아온 id로 해당하는 todo를 찾은 후 해당 todo의 index 반환
   try {
     const payload = { id, todo, desc, done };
+    // 해당 아이디를 가진 할일 전체를 업데이트 해줌
     const response = await axios.put(BASEURI + `/${id}`, payload);
     if (response.status === 200) {
+      // 받아온 id로 해당하는 todo를 찾은 후 해당 todo의 index 반환
       let index = states.todoList.findIndex((todo) => todo.id === id);
+      // 찾아온 todo의 값을 그대로 펼친 후 todo, desc, done 값을 업데이트해서 다시 대입
       states.todoList[index] = payload;
       successCallback();
     } else {
@@ -70,6 +73,7 @@ const updateTodo = async ({ id, todo, desc, done }, successCallback) => {
 
 // todo를 삭제하는 메소드, 해당 id의 todo를 찾아서 삭제
 const deleteTodo = async (id) => {
+  // 받아온 id로 해당하는 todo를 찾은 후 해당 todo의 index 반환
   states.isLoading = true;
   try {
     const response = await axios.put(BASEURI + `/${id}`, payload);
@@ -89,8 +93,11 @@ const deleteTodo = async (id) => {
 const toggleDone = async (id) => {
   states.isLoading = true;
   try {
+    // 받아온 id로 해당하는 todo를 찾아옴
     let todo = states.todoList.find((todo) => todo.id === id);
+    // todo의 값을 그대로 가져오고 done 값만 반대로 변경해줌
     let payload = { ...todo, done: !todo.done };
+    // done이 변경됐으므로 해당 아이디의 todo를 업데이트 해줌
     const response = await axios.put(BASEURI + `/${id}`, payload);
     if (response.status === 200) {
       todo.done = payload.done;
@@ -106,16 +113,21 @@ const toggleDone = async (id) => {
   // states.todoList[index].done = !states.todoList[index].done;
 };
 
-// TodoList 목록을 조회합니다.
+// TodoList 목록을 조회하는 메소드
 const fetchTodoList = async () => {
+  // try~catch 문: 예외 처리구문
+  // try: 예외가 발생할 수 있는 문장을 넣는다
   states.isLoading = true;
   try {
+    // 서버에서 데이터를 가져올 때 시간이 걸리기 때문에 await로 비동기 처리
     const response = await axios.get(BASEURI);
+    // status가 200인건 요청이 성공적으로 이루어졌다는 뜻
     if (response.status === 200) {
       states.todoList = response.data;
     } else {
       alert('데이터 조회 실패');
     }
+    // catch: 예외를 어떻게 처리할지 적어둠
   } catch (error) {
     alert('에러발생 :' + error);
   }

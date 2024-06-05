@@ -27,6 +27,7 @@ const router = createRouter({
     },
     {
       // 바뀌는 값엔 :붙이기
+      // 존재하지 않는 사이트라고 오류 뜰때 index.js 확인하기
       path: '/todos/edit/:id',
       component: EditTodo,
     },
