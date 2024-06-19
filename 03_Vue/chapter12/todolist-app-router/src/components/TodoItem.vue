@@ -20,7 +20,8 @@
     <span
       class="float-end badge bg-secondary pointer m-1"
       @click="deleteTodo(todoItem.id)"
-    ></span>
+      >삭제</span
+    >
   </li>
 </template>
 
