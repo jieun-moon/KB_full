@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 selector Basic</title>
+    <style>
+      /* input이 사용 가능할 경우 */
+      input:enabled {
+        background-color: white;
+      }
+      /* input이 사용 불가능할 경우 */
+      input:disabled {
+        background-color: gray;
+      }
+      /* input에 초점이 맞춰진 경우
+      대화형 태그에만 쓸 수 있음.
+      모든 태그에 쓸 수 없음. a태그, input태그만 가능
+      div는 빈공간이라 focus가 안먹힘. tap index가 있지만 많이 쓰이지 않음. */
+      input:focus {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>사용 가능</h2>
+    <input />
+    <h2>사용 불가능</h2>
+    <input disabled="disabled" />
+  </body>
+</html>

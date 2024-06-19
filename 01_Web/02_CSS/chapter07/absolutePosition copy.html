@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>네 개의 원 absolute로 배치하기</title>
+    <style>
+      #container {
+        width: 500px;
+        height: 300px;
+        border: 3px solid black;
+        overflow: hidden;
+        /* relative를 사용하여 container를 부모로 지정 */
+        /* relative가 빠지면 viewport 기준 */
+        position: relative;
+      }
+
+      /* 모든 원에 들어갈 공통 속성 */
+      .circle {
+        /* 위치상 부모를 기준으로 한다.(relative가 있는 요소) */
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        /* border-radius를 50%로 주면 원이 된다. */
+        border-radius: 50% 50%;
+      }
+      #red {
+        background: red;
+        left: 20px;
+        top: 20px;
+      }
+      #green {
+        background: green;
+        right: 20px;
+        top: 20px;
+      }
+      #blue {
+        background: blue;
+        right: 20px;
+        bottom: 20px;
+      }
+      #yellow {
+        background: yellow;
+        left: 20px;
+        bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dummy Text</h1>
+    <!-- class: 공통된 값 넣으려고
+    id: 고유한 값 넣으려고 -->
+    <div id="container">
+      <div id="red" class="circle"></div>
+      <div id="green" class="circle"></div>
+      <div id="blue" class="circle"></div>
+      <div id="yellow" class="circle"></div>
+    </div>
+    <h1>Dummy Text</h1>
+  </body>
+</html>
