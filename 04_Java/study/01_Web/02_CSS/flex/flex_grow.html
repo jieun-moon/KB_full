@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-grow</title>
+    <style>
+      .flex-container {
+        background-color: blue;
+        width: 800px;
+        height: 200px;
+        display: flex;
+      }
+      .flex-item {
+        background-color: ghostwhite;
+        width: 100px;
+        height: 100px;
+        border: 3px solid red;
+        text-align: center;
+        font-size: 30px;
+        /*요소의 초기 크기 
+        text를 상관하지 않고 비율을 동일하게 나누고 싶을 때 사용 */
+        flex-basis: 0;
+      }
+      .flex-item:nth-child(2) {
+        /* flex-grow: 증가 비율, 기본값 0(자식); */
+        flex-grow: 1;
+      }
+      .flex-item:nth-child(3) {
+        /* flex-grow: 증가 비율, 기본값 0(자식); */
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+  </body>
+</html>

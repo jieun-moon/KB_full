@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>setInterval함수 사용해서 타이머 설정</title>
+    <script>
+      window.onload = function () {
+        // 객체 선택
+        let clock = document.getElementById('clock');
+
+        // setInterval(함수, 시간): 지정 시간마다 함수가 실행된다.
+        // handler: 함수, timeout: 몇 초에 out 할거냐
+        // 함수안에 들어가는 함수: callback함수>익명함수 많이 씀.
+        setInterval(function () {
+          let now = new Date();
+          clock.innerHTML = now.toString();
+        }, 1000); //시간. ms(1000=1초)
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="clock"></h1>
+  </body>
+</html>

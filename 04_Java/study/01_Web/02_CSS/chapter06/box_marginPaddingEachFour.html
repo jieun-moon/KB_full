@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4면에 margin과 padding을 다르게 적용할 경우</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /* margin: 외부 여백 */
+        /* padding: 내부 여백(요소가 같이 커진다) */
+        /* margin: 30px ->상하좌우
+        margin: 30px 20px ->상하(30)좌우(20)
+        margin: 30px 20px 10px ->상(30)좌우(20)하(10)
+        margin: 0 30px 0 30px ->위부터 시계방향 
+        0px과 0em은 동일. 어차피 값이 0이기 때문에*/
+        margin: 0 30px 0 30px;
+        padding: 0 30px 0 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
