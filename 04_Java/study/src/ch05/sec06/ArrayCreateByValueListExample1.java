@@ -21,6 +21,7 @@ public class ArrayCreateByValueListExample1 {
 
         //총합과 평균 구하기
         int sum = 0;
+        //배열의 길이는 변할 수 있으므로 3 대신 scores.length()가 더 좋은 코드다
         for (int i = 0; i < 3; i++) {
             sum += scores[i];
         }
