@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/04_Java.iml" filepath="$PROJECT_DIR$/.idea/04_Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CLI-framework/CLI-framework.iml" filepath="$PROJECT_DIR$/CLI-framework/CLI-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Labs/Labs.iml" filepath="$PROJECT_DIR$/Labs/Labs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Scoulalib/Scoulalib.iml" filepath="$PROJECT_DIR$/Scoulalib/Scoulalib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentStore/StudentStore.iml" filepath="$PROJECT_DIR$/StudentStore/StudentStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CLI-framework/V0/V0.iml" filepath="$PROJECT_DIR$/CLI-framework/V0/V0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CLI-framework/V1/V1.iml" filepath="$PROJECT_DIR$/CLI-framework/V1/V1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CLI-framework/V2/V2.iml" filepath="$PROJECT_DIR$/CLI-framework/V2/V2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Labs/ch02/ch02.iml" filepath="$PROJECT_DIR$/Labs/ch02/ch02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Labs/ch03/ch03.iml" filepath="$PROJECT_DIR$/Labs/ch03/ch03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Labs/ch04/ch04.iml" filepath="$PROJECT_DIR$/Labs/ch04/ch04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study/study.iml" filepath="$PROJECT_DIR$/study/study.iml" />
+    </modules>
+  </component>
+</project>
