@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2eb5b77c-f3c6-40f6-b828-70f15a90d964" name="Changes" comment="java first commit">
+      <change beforePath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/command/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/command/ExitCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/MenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudentStore/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/AnalizeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/AnalizeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/GetScoresCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/GetScoresCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/InitScoresCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/InitScoresCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/PrintScoreCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/PrintScoreCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch01/sec09/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch01/sec11/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch01/sec12/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch01/verify/Example.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec01/VariableExchangeExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec01/VariableInitializationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec01/VariableUseExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec02/ByteExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec02/IntegerLiteralExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec02/LongExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec06/StringExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec08/CastingExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec09/StringConcatExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec10/PrimitiveAndStringConversionExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec12/PrintfExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec13/ScannerExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec01/IncreaseDecreaseOperatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec03/OverflowUnderflowExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec04/AccuracyExample1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec04/AccuracyExample2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec06/CompareOperatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec07/LogicalOperatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec10/AssignmentOperatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec11/ConditionalOperationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch04/sec02/IfDiceExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch04/sec02/IfElseExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch04/sec02/IfElseIfElseExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch04/sec02/IfExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch04/sec02/IfNestedExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch04/sec03/SwitchExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec06/exam01/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec06/exam01/CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam01/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam01/CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam02/Korean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam02/KoreanExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam03/Korean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam03/KoreanExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam04/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam04/CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam05/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam05/CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam01/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam01/CalculatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam02/Computer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam02/ComputerExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam03/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam03/CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam04/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam04/CalculatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec09/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec09/CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec10/exam01/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec10/exam01/CalculatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec10/exam02/Television.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec10/exam02/TelevisionExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec11/exam02/Earth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec11/exam02/EarthExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec14/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec14/CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/비전공D반_문지은.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/practice/MySql.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/practice/MySqlExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/practice/trapezoid.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2hzCpcVDrHhgel2p0XmAWQwigeA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AExample.executor": "Run",
+    "Application.AbstractMethodExample.executor": "Run",
+    "Application.AccountExample.executor": "Run",
+    "Application.AccuracyExample1.executor": "Run",
+    "Application.AccuracyExample2.executor": "Run",
+    "Application.App.executor": "Run",
+    "Application.ArrayCreateByNewExample.executor": "Run",
+    "Application.ArrayCreateByValueListExample1.executor": "Run",
+    "Application.ArrayCreateByValueListExample2.executor": "Run",
+    "Application.AssignmentOperatorExample.executor": "Run",
+    "Application.BeepPrintExample.executor": "Run",
+    "Application.BoxingUnBoxingExample.executor": "Run",
+    "Application.ButtonExample.executor": "Run",
+    "Application.Calculator.executor": "Run",
+    "Application.CalculatorExample.executor": "Run",
+    "Application.CarExample.executor": "Run",
+    "Application.CastingExample.executor": "Run",
+    "Application.CharAtExample.executor": "Run",
+    "Application.ChildExample.executor": "Run",
+    "Application.CompareOperatorExample.executor": "Run",
+    "Application.ComputerExample.executor": "Run",
+    "Application.ConditionalOperationExample.executor": "Run",
+    "Application.DriverExample.executor": "Run",
+    "Application.EarthExample.executor": "Run",
+    "Application.EmptyStringExample.executor": "Run",
+    "Application.EqualsExample.executor": "Run",
+    "Application.ErrExample.executor": "Run",
+    "Application.Example.executor": "Run",
+    "Application.ExceptionHandlingExample.executor": "Run",
+    "Application.ExceptionHandlingExample1.executor": "Run",
+    "Application.ExceptionHandlingExample2.executor": "Run",
+    "Application.ExitExample.executor": "Run",
+    "Application.ExtendsExample.executor": "Run",
+    "Application.GarbageObjectExample.executor": "Run",
+    "Application.GetPropertyExample.executor": "Run",
+    "Application.HashCodeExample.executor": "Run",
+    "Application.HashSetExample.executor": "Run",
+    "Application.Hello.executor": "Run",
+    "Application.HomeExample.executor": "Run",
+    "Application.HttpServletExample.executor": "Run",
+    "Application.IfDiceExample.executor": "Run",
+    "Application.IfElseExample.executor": "Run",
+    "Application.IfElseIfElseExample.executor": "Run",
+    "Application.IfExample.executor": "Run",
+    "Application.InExample.executor": "Run",
+    "Application.IncreaseDecreaseOperatorExample.executor": "Run",
+    "Application.IndexOfContainsExample.executor": "Run",
+    "Application.InstanceofExample.executor": "Run",
+    "Application.IntegerLiteralExample.executor": "Run",
+    "Application.KoreanExample.executor": "Run",
+    "Application.L3.executor": "Run",
+    "Application.LengthExample.executor": "Run",
+    "Application.LogicalOperatorExample.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MathExample.executor": "Run",
+    "Application.MeasureRunTimeExample.executor": "Run",
+    "Application.MultiInterfaceImplExample.executor": "Run",
+    "Application.MyApp.executor": "Run",
+    "Application.MySqlExample.executor": "Run",
+    "Application.NullPointerExceptionExample.executor": "Run",
+    "Application.OverflowUnderflowExample.executor": "Run",
+    "Application.PatternExample.executor": "Run",
+    "Application.PhoneExample.executor": "Run",
+    "Application.PrimitiveAndStringConversionExample.executor": "Run",
+    "Application.PrintfExample.executor": "Run",
+    "Application.PromotionExample.executor": "Run",
+    "Application.RandomExample.executor": "Run",
+    "Application.RecordExample.executor": "Run",
+    "Application.ReferenceVariableCompareExample.executor": "Run",
+    "Application.RemoteControlExample.executor": "Run",
+    "Application.ReplaceExample.executor": "Run",
+    "Application.ScannerExample.executor": "Run",
+    "Application.SmartPhoneExample.executor": "Run",
+    "Application.SplitExample.executor": "Run",
+    "Application.StringBuilderExample.executor": "Run",
+    "Application.StringConcatExample.executor": "Run",
+    "Application.StringExample.executor": "Run",
+    "Application.StringTokenizerExample.executor": "Run",
+    "Application.SubStringExample.executor": "Run",
+    "Application.SupersonicAirplaneExample.executor": "Run",
+    "Application.SwitchExample.executor": "Run",
+    "Application.TelevisionExample.executor": "Run",
+    "Application.ThrowsExample1.executor": "Run",
+    "Application.ThrowsExample2.executor": "Run",
+    "Application.ToStringExample.executor": "Run",
+    "Application.TryWithResourceExample.executor": "Run",
+    "Application.VariableExchangeExample.executor": "Run",
+    "Application.VariableInitializationExample.executor": "Run",
+    "Application.VariableUseExample.executor": "Run",
+    "Application.ch06.sec07.exam01.CarExample.executor": "Run",
+    "Application.ch06.sec07.exam03.KoreanExample.executor": "Run",
+    "Application.ch06.sec07.exam04.CarExample.executor": "Run",
+    "Application.ch06.sec07.exam05.CarExample.executor": "Run",
+    "Application.ch06.sec08.exam04.CalculatorExample.executor": "Run",
+    "Application.ch06.sec09.CarExample.executor": "Run",
+    "Application.ch06.sec10.exam01.CalculatorExample.executor": "Run",
+    "Application.ch07.sec03.exam01.SmartPhoneExample.executor": "Run",
+    "Application.ch07.sec03.exam02.SmartPhoneExample.executor": "Run",
+    "Application.ch08.sec04.RemoteControlExample.executor": "Run",
+    "Application.ch08.sec10.exam01.ExtendsExample.executor": "Run",
+    "Application.ch09.sec02.exam02.AExample.executor": "Run",
+    "Application.ch09.sec03.exam01.AExample.executor": "Run",
+    "Application.ch09.sec03.exam02.AExample.executor": "Run",
+    "Application.ch09.sec04.exam2.AExample.executor": "Run",
+    "Application.ch09.sec05.exam02.AExample.executor": "Run",
+    "Application.ch09.sec07.exam03.ButtonExample.executor": "Run",
+    "Application.ch11.sec02.exam02.ExceptionHandlingExample.executor": "Run",
+    "Application.ch11.sec03.exam01.ExceptionHandlingExample.executor": "Run",
+    "Application.ch11.sec03.exam02.ExceptionHandlingExample.executor": "Run",
+    "Application.ch11.sec03.exam03.ExceptionHandlingExample.executor": "Run",
+    "Application.ch14.sec03.exam02.BeepPrintExample.executor": "Run",
+    "Application.printLine.executor": "Run",
+    "Application.trapezoid.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/KB_Fullstack/04_Java/study",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/KB_Fullstack/04_Java/study/src/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\KB_Fullstack\04_Java\study\src\ch08\sec04" />
+      <recent name="C:\KB_Fullstack\04_Java\study\src\ch07\sec07\exam03" />
+      <recent name="C:\KB_Fullstack\04_Java\study\src\ch07\sec03\exam02" />
+      <recent name="C:\KB_Fullstack\04_Java\study\src\ch07\sec03\exam01" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ch12.sec03.exam05" />
+      <recent name="ch07.sec05.exam02" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ch14.sec03.exam02.BeepPrintExample">
+    <configuration name="BeepPrintExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch14.sec03.exam01.BeepPrintExample" />
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch14.sec03.exam01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch12.sec11.exam01.CarExample" />
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch12.sec11.exam01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatternExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch12.sec10.PatternExample" />
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch12.sec10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrintAnnotationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch12.sec12.PrintAnnotationExample" />
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch12.sec12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ch14.sec03.exam02.BeepPrintExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch14.sec03.exam02.BeepPrintExample" />
+      <module name="study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch14.sec03.exam02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ch14.sec03.exam02.BeepPrintExample" />
+        <item itemvalue="Application.BeepPrintExample" />
+        <item itemvalue="Application.PrintAnnotationExample" />
+        <item itemvalue="Application.CarExample" />
+        <item itemvalue="Application.PatternExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2eb5b77c-f3c6-40f6-b828-70f15a90d964" name="Changes" comment="" />
+      <created>1718587703959</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718587703959</updated>
+      <workItem from="1718587704862" duration="556000" />
+      <workItem from="1718588275203" duration="8115000" />
+      <workItem from="1718603454404" duration="2000" />
+      <workItem from="1718671845452" duration="2021000" />
+      <workItem from="1718678204371" duration="14600000" />
+      <workItem from="1718755574288" duration="21756000" />
+      <workItem from="1718847897914" duration="18720000" />
+      <workItem from="1718938202525" duration="16337000" />
+      <workItem from="1719274034743" duration="6650000" />
+      <workItem from="1719292849453" duration="12336000" />
+      <workItem from="1719368840559" duration="12518000" />
+      <workItem from="1719385363985" duration="6913000" />
+      <workItem from="1719396927977" duration="1782000" />
+      <workItem from="1719464006563" duration="12559000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="java first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="java first commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/practice/trapezoid.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ch01/sec12/Calculator.java</url>
+          <line>3</line>
+          <properties class="ch01.sec12.Calculator" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ch02/sec13/ScannerExample.java</url>
+          <line>6</line>
+          <properties class="ch02.sec13.ScannerExample" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ch02/sec08/CastingExample.java</url>
+          <line>3</line>
+          <properties class="ch02.sec08.CastingExample" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/practice/trapezoid.java</url>
+          <line>5</line>
+          <properties class="practice.trapezoid" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ch06/sec08/exam01/CalculatorExample.java</url>
+          <line>3</line>
+          <properties class="ch06.sec08.exam01.CalculatorExample" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ch07/sec09/InstanceofExample.java</url>
+          <line>4</line>
+          <properties class="ch07.sec09.InstanceofExample" method="personInfo">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ch09/sec05/exam02/AExample.java</url>
+          <line>3</line>
+          <properties class="ch09.sec05.exam02.AExample" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ch09/sec06/exam03/ButtonExample.java</url>
+          <line>5</line>
+          <properties class="ch09.sec06.exam03.ButtonExample" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ch09/sec07/exam01/CarExample.java</url>
+          <line>3</line>
+          <properties class="ch09.sec07.exam01.CarExample" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ch05/sec06/ArrayCreateByValueListExample1.java</url>
+          <line>3</line>
+          <properties class="ch05.sec06.ArrayCreateByValueListExample1" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ch05/sec06/ArrayCreateByValueListExample2.java</url>
+          <line>11</line>
+          <properties class="ch05.sec06.ArrayCreateByValueListExample2" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ch11/sec02/exam01/ExceptionHandlingExample2.java</url>
+          <line>16</line>
+          <properties class="ch11.sec02.exam01.ExceptionHandlingExample2" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ch11/sec04/TryWithResourceExample.java</url>
+          <line>3</line>
+          <properties class="ch11.sec04.TryWithResourceExample" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/ch12/sec04/ExitExample.java</url>
+          <line>3</line>
+          <properties class="ch12.sec04.ExitExample" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="17" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
