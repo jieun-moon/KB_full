@@ -1,2 +1,4 @@
-package org.scoula.lib.cli.command;public class InitScoresCommand {
+package org.scoula.lib.cli.command;
+
+public class InitScoresCommand {
 }

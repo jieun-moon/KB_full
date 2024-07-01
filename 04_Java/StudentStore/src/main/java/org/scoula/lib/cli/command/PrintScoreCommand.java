@@ -1,2 +1,4 @@
-package org.scoula.lib.cli.command;public class PrintScoreCommand {
+package org.scoula.lib.cli.command;
+
+public class PrintScoreCommand {
 }

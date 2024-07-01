@@ -5,6 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2eb5b77c-f3c6-40f6-b828-70f15a90d964" name="Changes" comment="java first commit">
+      <change afterPath="$PROJECT_DIR$/src/ch13/sec01/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch13/sec01/GenericExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/exception/BadMenuException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/dao/TodoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/domain/Todo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/command/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/command/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/command/ExitCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/Input.java" afterDir="false" />
@@ -16,6 +24,7 @@
       <change beforePath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/GetScoresCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/GetScoresCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/InitScoresCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/InitScoresCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/PrintScoreCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/PrintScoreCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../src/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../src/ch01/sec09/Hello.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../src/ch01/sec11/Hello.java" beforeDir="false" />
@@ -354,7 +363,11 @@
       <workItem from="1719368840559" duration="12518000" />
       <workItem from="1719385363985" duration="6913000" />
       <workItem from="1719396927977" duration="1782000" />
-      <workItem from="1719464006563" duration="12559000" />
+      <workItem from="1719464006563" duration="14427000" />
+      <workItem from="1719809858686" duration="16000" />
+      <workItem from="1719809885313" duration="87000" />
+      <workItem from="1719809985165" duration="143000" />
+      <workItem from="1719810143702" duration="9000" />
     </task>
     <servers />
   </component>

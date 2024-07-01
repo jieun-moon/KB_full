@@ -1,2 +1,4 @@
-package org.scoula.lib.cli.ui;public class MenuItem {
+package org.scoula.lib.cli.ui;
+
+public class MenuItem {
 }

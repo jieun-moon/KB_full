@@ -1,2 +1,4 @@
-package org.scoula.lib.cli;public class App {
+package org.scoula.lib.cli;
+
+public class App {
 }

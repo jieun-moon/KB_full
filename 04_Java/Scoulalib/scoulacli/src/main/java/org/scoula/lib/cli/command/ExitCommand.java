@@ -1,2 +1,4 @@
-package org.scoula.lib.cli.command;public class ExitCommand {
+package org.scoula.lib.cli.command;
+
+public class ExitCommand {
 }

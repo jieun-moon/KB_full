@@ -1,2 +1,4 @@
-package org.scoula.lib.cli.command;public interface Command {
+package org.scoula.lib.cli.command;
+
+public interface Command {
 }
