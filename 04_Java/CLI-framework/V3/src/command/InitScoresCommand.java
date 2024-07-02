@@ -1,7 +1,6 @@
-//package CLIFrameworkV3.domain.command;
+//package command;
 //
-//import CLIFrameworkV2.Input;
-//import CLIFrameworkV3.domain.StudentScores;
+//import domain.StudentScores;
 //
 //public class InitScoresCommand implements Command {
 //    StudentScores studentScores = StudentScores.getInstance();

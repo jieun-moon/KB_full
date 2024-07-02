@@ -8,9 +8,10 @@ public class PropertiesExample {
         Properties properties = new Properties();
 
         //PropertiesExample.class와 동일한 ClassPath에 있는 database.properties 파일 로드
-        properties.load(PropertiesExample.class.getResourceAsStream("database.properties"));
+        properties.load(PropertiesExample.class.getResourceAsStream("ch15/sec04/exam03/database.properties"));
 
         //주어진 키에 대한 값 읽기
+        //HashMap의 get(Key)와 동일
         String driver = properties.getProperty("driver");
         String url = properties.getProperty("url");
         String username = properties.getProperty("username");

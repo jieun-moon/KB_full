@@ -1,10 +1,15 @@
+import java.util.Scanner;
+
 public class App {
     int studentNum = 0;
     int[] scores = null;
 
+    Scanner scanner = new Scanner(System.in);
+
     Menu menu;
 
     public App(){
+        //생성자에서 Menu로 객체 생성해서 초기화
         menu = new Menu();
     }
     private void analize(){
@@ -40,10 +45,7 @@ public class App {
         }
     }
 
-    //exit: 5번 메뉴인 종료 기능 처리하는 메소드
-    public void exit(){
-        run=false;
-    }
+
 
     //executeCommand: 만들어둔 메소드들을 사용자의 입력값에 따라 호출
     public void executeCommand(int selectNo){
@@ -55,15 +57,22 @@ public class App {
             printScore();
         } else if(selectNo == 4 ) {
             analize();
-        } else if (selectNo == 5 ) {
-            exit();
         }
+
     }
     public void run(){
         while(true){
             menu.printMenu();
             int selectNo = menu.getSelect();
             executeCommand(selectNo);
+            if (selectNo == 5 ) {
+                break;
+            }
         }
+    }
+
+    public static void main(String[] args) {
+        App app = new App();
+        app.run();
     }
 }
