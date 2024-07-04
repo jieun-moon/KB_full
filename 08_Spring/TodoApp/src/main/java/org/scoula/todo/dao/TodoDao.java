@@ -1,2 +1,2 @@
-package org.scoula.todo.dao;public class TodoDao {
+package org.scoula.todo.dao;public interface TodoDao {
 }
