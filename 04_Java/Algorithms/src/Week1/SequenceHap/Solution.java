@@ -1,8 +1,6 @@
-package SequenceHap;
+package Week1.SequenceHap;
 
-import java.util.*;
-
-class Solution {
+public class Solution {
     public int[] solution(int[] sequence, int k) {
         int[] answer={0, 1_000_000};
         int total = 0;

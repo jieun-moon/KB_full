@@ -1,8 +1,8 @@
-package participant;
+package Week1.participant;
 
-import java.util.*;
+import java.util.Arrays;
 
-class Solution {
+public class solution {
     public String solution(String[] participant, String[] completion) {
         //정렬(nlogn)
         Arrays.sort(participant);

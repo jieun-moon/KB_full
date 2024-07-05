@@ -1,8 +1,8 @@
-package budget;
+package Week1.budget;
 
 import java.util.Arrays;
 
-class Solution {
+public class solution {
     public int solution(int[] d, int budget) {
         Arrays.sort(d);
         int result = 0;
