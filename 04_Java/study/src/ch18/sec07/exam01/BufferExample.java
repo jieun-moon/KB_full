@@ -4,16 +4,17 @@ import java.io.*;
 
 public class BufferExample {
     public static void main(String[] args) throws Exception {
-        //입출력 스트림 생성
+        //입출력 스트림만 생성
         String originalFilePath1 =
-                BufferExample.class.getResource("originalFile1.jpg").getPath();
+                BufferExample.class.getResource("/originalFile1.jpg").getPath();
+
         String targetFilePath1 = "C:/Temp/targetFile1.jpg";
         FileInputStream fis = new FileInputStream(originalFilePath1);
         FileOutputStream fos = new FileOutputStream(targetFilePath1);
 
         //입출력 스트림 + 버퍼 스트림 생성
         String originalFilePath2 =
-                BufferExample.class.getResource("originalFile2.jpg").getPath();
+                BufferExample.class.getResource("/originalFile2.jpg").getPath();
         String targetFilePath2 = "C:/Temp/targetFile2.jpg";
         FileInputStream fis2 = new FileInputStream(originalFilePath2);
         FileOutputStream fos2 = new FileOutputStream(targetFilePath2);
@@ -38,6 +39,7 @@ public class BufferExample {
         //시작 시간 저장
         long start = System.nanoTime();
         //1바이트를 읽고 1바이트를 출력
+        //입력 경로에서 받아온 데이터를 그대로 출력 경로에 씀
         while(true){
             int data = is.read();
             if(data == -1) break;

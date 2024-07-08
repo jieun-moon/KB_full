@@ -12,6 +12,7 @@ public class ReadExample {
             byte[] data = new byte[100];
 
             while(true){
+                //최대 배열의 개수만큼 읽음(100byte)
                 int num = is.read(data); //최대 100byte 읽기
                 if(num == -1) break; //파일 끝 도달
 

@@ -5,26 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2eb5b77c-f3c6-40f6-b828-70f15a90d964" name="Changes" comment="java first commit">
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec01/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ch13/sec01/GenericExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/exception/BadMenuException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/dao/TodoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/domain/Todo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/command/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/command/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/command/ExitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/MenuItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentStore/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/AnalizeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/AnalizeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/GetScoresCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/GetScoresCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/InitScoresCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/InitScoresCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/PrintScoreCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/src/main/java/org/scoula/lib/cli/command/PrintScoreCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/exception/BadMenuException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/exception/BadMenuException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/TodoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/TodoApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/AddTodoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/AddTodoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/DeleteTodoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/DeleteTodoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/DetailTodoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/DetailTodoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/PrintTodoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/PrintTodoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/UpdateTodoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/UpdateTodoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/dao/TodoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/dao/TodoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/dao/TodoListDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/dao/TodoListDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/domain/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/domain/Todo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../src/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../src/ch01/sec09/Hello.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../src/ch01/sec11/Hello.java" beforeDir="false" />
@@ -114,138 +109,138 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AExample.executor": "Run",
-    "Application.AbstractMethodExample.executor": "Run",
-    "Application.AccountExample.executor": "Run",
-    "Application.AccuracyExample1.executor": "Run",
-    "Application.AccuracyExample2.executor": "Run",
-    "Application.App.executor": "Run",
-    "Application.ArrayCreateByNewExample.executor": "Run",
-    "Application.ArrayCreateByValueListExample1.executor": "Run",
-    "Application.ArrayCreateByValueListExample2.executor": "Run",
-    "Application.AssignmentOperatorExample.executor": "Run",
-    "Application.BeepPrintExample.executor": "Run",
-    "Application.BoxingUnBoxingExample.executor": "Run",
-    "Application.ButtonExample.executor": "Run",
-    "Application.Calculator.executor": "Run",
-    "Application.CalculatorExample.executor": "Run",
-    "Application.CarExample.executor": "Run",
-    "Application.CastingExample.executor": "Run",
-    "Application.CharAtExample.executor": "Run",
-    "Application.ChildExample.executor": "Run",
-    "Application.CompareOperatorExample.executor": "Run",
-    "Application.ComputerExample.executor": "Run",
-    "Application.ConditionalOperationExample.executor": "Run",
-    "Application.DriverExample.executor": "Run",
-    "Application.EarthExample.executor": "Run",
-    "Application.EmptyStringExample.executor": "Run",
-    "Application.EqualsExample.executor": "Run",
-    "Application.ErrExample.executor": "Run",
-    "Application.Example.executor": "Run",
-    "Application.ExceptionHandlingExample.executor": "Run",
-    "Application.ExceptionHandlingExample1.executor": "Run",
-    "Application.ExceptionHandlingExample2.executor": "Run",
-    "Application.ExitExample.executor": "Run",
-    "Application.ExtendsExample.executor": "Run",
-    "Application.GarbageObjectExample.executor": "Run",
-    "Application.GetPropertyExample.executor": "Run",
-    "Application.HashCodeExample.executor": "Run",
-    "Application.HashSetExample.executor": "Run",
-    "Application.Hello.executor": "Run",
-    "Application.HomeExample.executor": "Run",
-    "Application.HttpServletExample.executor": "Run",
-    "Application.IfDiceExample.executor": "Run",
-    "Application.IfElseExample.executor": "Run",
-    "Application.IfElseIfElseExample.executor": "Run",
-    "Application.IfExample.executor": "Run",
-    "Application.InExample.executor": "Run",
-    "Application.IncreaseDecreaseOperatorExample.executor": "Run",
-    "Application.IndexOfContainsExample.executor": "Run",
-    "Application.InstanceofExample.executor": "Run",
-    "Application.IntegerLiteralExample.executor": "Run",
-    "Application.KoreanExample.executor": "Run",
-    "Application.L3.executor": "Run",
-    "Application.LengthExample.executor": "Run",
-    "Application.LogicalOperatorExample.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MathExample.executor": "Run",
-    "Application.MeasureRunTimeExample.executor": "Run",
-    "Application.MultiInterfaceImplExample.executor": "Run",
-    "Application.MyApp.executor": "Run",
-    "Application.MySqlExample.executor": "Run",
-    "Application.NullPointerExceptionExample.executor": "Run",
-    "Application.OverflowUnderflowExample.executor": "Run",
-    "Application.PatternExample.executor": "Run",
-    "Application.PhoneExample.executor": "Run",
-    "Application.PrimitiveAndStringConversionExample.executor": "Run",
-    "Application.PrintfExample.executor": "Run",
-    "Application.PromotionExample.executor": "Run",
-    "Application.RandomExample.executor": "Run",
-    "Application.RecordExample.executor": "Run",
-    "Application.ReferenceVariableCompareExample.executor": "Run",
-    "Application.RemoteControlExample.executor": "Run",
-    "Application.ReplaceExample.executor": "Run",
-    "Application.ScannerExample.executor": "Run",
-    "Application.SmartPhoneExample.executor": "Run",
-    "Application.SplitExample.executor": "Run",
-    "Application.StringBuilderExample.executor": "Run",
-    "Application.StringConcatExample.executor": "Run",
-    "Application.StringExample.executor": "Run",
-    "Application.StringTokenizerExample.executor": "Run",
-    "Application.SubStringExample.executor": "Run",
-    "Application.SupersonicAirplaneExample.executor": "Run",
-    "Application.SwitchExample.executor": "Run",
-    "Application.TelevisionExample.executor": "Run",
-    "Application.ThrowsExample1.executor": "Run",
-    "Application.ThrowsExample2.executor": "Run",
-    "Application.ToStringExample.executor": "Run",
-    "Application.TryWithResourceExample.executor": "Run",
-    "Application.VariableExchangeExample.executor": "Run",
-    "Application.VariableInitializationExample.executor": "Run",
-    "Application.VariableUseExample.executor": "Run",
-    "Application.ch06.sec07.exam01.CarExample.executor": "Run",
-    "Application.ch06.sec07.exam03.KoreanExample.executor": "Run",
-    "Application.ch06.sec07.exam04.CarExample.executor": "Run",
-    "Application.ch06.sec07.exam05.CarExample.executor": "Run",
-    "Application.ch06.sec08.exam04.CalculatorExample.executor": "Run",
-    "Application.ch06.sec09.CarExample.executor": "Run",
-    "Application.ch06.sec10.exam01.CalculatorExample.executor": "Run",
-    "Application.ch07.sec03.exam01.SmartPhoneExample.executor": "Run",
-    "Application.ch07.sec03.exam02.SmartPhoneExample.executor": "Run",
-    "Application.ch08.sec04.RemoteControlExample.executor": "Run",
-    "Application.ch08.sec10.exam01.ExtendsExample.executor": "Run",
-    "Application.ch09.sec02.exam02.AExample.executor": "Run",
-    "Application.ch09.sec03.exam01.AExample.executor": "Run",
-    "Application.ch09.sec03.exam02.AExample.executor": "Run",
-    "Application.ch09.sec04.exam2.AExample.executor": "Run",
-    "Application.ch09.sec05.exam02.AExample.executor": "Run",
-    "Application.ch09.sec07.exam03.ButtonExample.executor": "Run",
-    "Application.ch11.sec02.exam02.ExceptionHandlingExample.executor": "Run",
-    "Application.ch11.sec03.exam01.ExceptionHandlingExample.executor": "Run",
-    "Application.ch11.sec03.exam02.ExceptionHandlingExample.executor": "Run",
-    "Application.ch11.sec03.exam03.ExceptionHandlingExample.executor": "Run",
-    "Application.ch14.sec03.exam02.BeepPrintExample.executor": "Run",
-    "Application.printLine.executor": "Run",
-    "Application.trapezoid.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/KB_Fullstack/04_Java/study",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/KB_Fullstack/04_Java/study/src/Main.java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AbstractMethodExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AccountExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AccuracyExample1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AccuracyExample2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArrayCreateByNewExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArrayCreateByValueListExample1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArrayCreateByValueListExample2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AssignmentOperatorExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BeepPrintExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BoxingUnBoxingExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ButtonExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Calculator.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CalculatorExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CarExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CastingExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CharAtExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ChildExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CompareOperatorExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ComputerExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ConditionalOperationExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DriverExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EarthExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EmptyStringExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EqualsExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ErrExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Example.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExceptionHandlingExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExceptionHandlingExample1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExceptionHandlingExample2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExitExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ExtendsExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GarbageObjectExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GetPropertyExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HashCodeExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HashSetExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Hello.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HomeExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HttpServletExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IfDiceExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IfElseExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IfElseIfElseExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IfExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IncreaseDecreaseOperatorExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IndexOfContainsExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InstanceofExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.IntegerLiteralExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KoreanExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.L3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LengthExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LogicalOperatorExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MathExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MeasureRunTimeExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MultiInterfaceImplExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MyApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MySqlExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NullPointerExceptionExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OverflowUnderflowExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PatternExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PhoneExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PrimitiveAndStringConversionExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PrintfExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PromotionExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RandomExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RecordExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReferenceVariableCompareExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RemoteControlExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReplaceExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ScannerExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SmartPhoneExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SplitExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StringBuilderExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StringConcatExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StringExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StringTokenizerExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SubStringExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SupersonicAirplaneExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SwitchExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TelevisionExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThrowsExample1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ThrowsExample2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ToStringExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TryWithResourceExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VariableExchangeExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VariableInitializationExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VariableUseExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch06.sec07.exam01.CarExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch06.sec07.exam03.KoreanExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch06.sec07.exam04.CarExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch06.sec07.exam05.CarExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch06.sec08.exam04.CalculatorExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch06.sec09.CarExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch06.sec10.exam01.CalculatorExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch07.sec03.exam01.SmartPhoneExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch07.sec03.exam02.SmartPhoneExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch08.sec04.RemoteControlExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch08.sec10.exam01.ExtendsExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch09.sec02.exam02.AExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch09.sec03.exam01.AExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch09.sec03.exam02.AExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch09.sec04.exam2.AExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch09.sec05.exam02.AExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch09.sec07.exam03.ButtonExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch11.sec02.exam02.ExceptionHandlingExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch11.sec03.exam01.ExceptionHandlingExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch11.sec03.exam02.ExceptionHandlingExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch11.sec03.exam03.ExceptionHandlingExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ch14.sec03.exam02.BeepPrintExample.executor&quot;: &quot;Run&quot;,
+    &quot;Application.printLine.executor&quot;: &quot;Run&quot;,
+    &quot;Application.trapezoid.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/KB_Fullstack/04_Java/study&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/KB_Fullstack/04_Java/study/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\KB_Fullstack\04_Java\study\src\ch08\sec04" />
@@ -368,6 +363,7 @@
       <workItem from="1719809885313" duration="87000" />
       <workItem from="1719809985165" duration="143000" />
       <workItem from="1719810143702" duration="9000" />
+      <workItem from="1720068757646" duration="1211000" />
     </task>
     <servers />
   </component>

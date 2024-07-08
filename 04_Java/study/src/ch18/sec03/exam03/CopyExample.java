@@ -16,8 +16,10 @@ public class CopyExample {
         ) {
             byte[] data = new byte[1024]; //배열 버퍼 생성
             while(true){
+                //최대 배열의 크기인 1024바이트 읽기
                 int num = is.read(data); //최대 1024바이트 읽기
                 if(num == -1) break; //파일을 다 읽으면 while 문 종료
+                //num만큼 데이터 파일 쓰기
                 os.write(data, 0, num); //읽은 데이터 파일에 쓰기
             }
 

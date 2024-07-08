@@ -6,9 +6,11 @@ import java.io.Writer;
 
 public class WriteExample {
     public static void main(String[] args) {
+        //문자 기반 출력 스트림 생성(Writer)
         try(Writer writer = new FileWriter("C:/Temp/test.txt")){
             //1 문자씩 출력
             char a = 'A';
+            //write는 한줄로 나옴(=줄바꿈X)
             writer.write(a);
             char b = 'B';
             writer.write(b);
