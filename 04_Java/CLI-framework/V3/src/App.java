@@ -1,16 +1,8 @@
-import command.Command;
-import command.GetScoresCommand;
-import command.InitScoresCommand;
-import command.PrintScoreCommand;
-import src.command.AnalizeCommand;
-import src.command.ExitCommand;
-
-import java.awt.*;
-import java.util.Scanner;
+import command.*;
 
 public class App {
     Menu menu;
-    command.Command[] commands;
+    Command[] commands;
 
     public App(){
         //생성자에서 Menu로 객체 생성해서 초기화
@@ -35,11 +27,9 @@ public class App {
 
     public void run(){
         while(true){
+            menu.printMenu();
             int selectNo = menu.getSelect();
-
-            if (selectNo == 5 ) {
-                break;
-            }
+            executeCommand(selectNo);
         }
     }
 

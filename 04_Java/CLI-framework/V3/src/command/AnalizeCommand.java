@@ -1,7 +1,9 @@
-package src.command;
+package command;
+
+import domain.StudentScores;
 
 public class AnalizeCommand implements Command {
-    StudentScores studentScores = StudentScores.getInstance;
+    StudentScores studentScores = StudentScores.getInstance();
 
     //4번 메뉴인 분석 기능 처리하는 클래스
     @Override

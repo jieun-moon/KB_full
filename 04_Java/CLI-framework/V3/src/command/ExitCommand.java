@@ -1,4 +1,4 @@
-package src.command;
+package command;
 
 //5번 메뉴인 종료 기능 처리하는 클래스
 public class ExitCommand implements Command {

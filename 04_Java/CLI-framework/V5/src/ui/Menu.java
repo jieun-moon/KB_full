@@ -2,7 +2,6 @@ package ui;
 
 import basic.Input;
 import command.Command;
-import ui.MenuItem;
 
 public class Menu {
     //메뉴들을 MenuItem 객체로 만들어서 관리해줌
@@ -20,6 +19,7 @@ public class Menu {
 
     public void printMenu(){
         System.out.println("----------------------------");
+        //length는 필드이므로 함수 쓰지 않음!
         for (int i = 0; i < menus.length; i++) {
             //menus[i]는 MenuItem의 객체이므로 title만 가져와서 출력
             System.out.printf("%d.%s | ", i+1, menus[i].getTitle());

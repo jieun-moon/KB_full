@@ -1,45 +1,36 @@
-import command.Command;
-import command.GetScoresCommand;
-import command.InitScoresCommand;
-import command.PrintScoreCommand;
-import src.command.AnalizeCommand;
-import src.command.ExitCommand;
+import command.*;
 
-import java.awt.*;
-import java.util.Scanner;
+import ui.*;
 
 public class App {
     Menu menu;
-    command.Command[] commands;
+    Command[] commands;
 
     public App(){
-        //생성자에서 Menu로 객체 생성해서 초기화
-        menu = new Menu();
-        //Command 패턴
-        commands = new Command[]{
-                new InitScoresCommand(), //1. 학생수 입력
-                new GetScoresCommand(), //2. 점수 입력
-                new PrintScoreCommand(), //3. 점수 출력
-                new AnalizeCommand(), //4. 분석
-                new ExitCommand(), //5. 종료
-        };
+
     }
 
-    //executeCommand: 만들어둔 메소드들을 사용자의 입력값에 따라 호출
-    public void executeCommand(int selectNo){
-        //인덱스로 접근해야 하기 때문에 사용자가 입력한 번호에서 -1 해줌
-        Command command = commands[selectNo-1];
-        //가져온 command의 execute가 실행된다.
-        command.execute();
+    public void init(int menuSize){
+        menu = new Menu(menuSize);
+        createMenu(menu);
+    }
+
+    public void createMenu(Menu menu){
+        //MenuItem 배열의 해당 인덱스에 메뉴 이름과 Command를 묶어서 추가해준다
+        menu.add(0,new MenuItem("학생수", new InitScoresCommand()));
+        menu.add(1,new MenuItem("점수입력", new GetScoresCommand()));
+        menu.add(2,new MenuItem("점수리스트", new PrintScoreCommand()));
+        menu.add(3,new MenuItem("분석", new AnalizeCommand()));
+        menu.add(4,new MenuItem("종료", new ExitCommand()));
     }
 
     public void run(){
+        init(5);
         while(true){
-            int selectNo = menu.getSelect();
-
-            if (selectNo == 5 ) {
-                break;
-            }
+            menu.printMenu();
+            //사용자가 입력한 번호에 해당하는 command 리턴
+            Command command = menu.getSelect();
+            command.execute();
         }
     }
 

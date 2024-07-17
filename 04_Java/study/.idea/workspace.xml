@@ -5,6 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2eb5b77c-f3c6-40f6-b828-70f15a90d964" name="Changes" comment="java first commit">
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/CLI-framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/CLI-framework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V3/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V3/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V3/src/command/AnalizeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V3/src/command/AnalizeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V3/src/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V3/src/command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V3/src/command/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V3/src/command/ExitCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V3/src/command/InitScoresCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V3/src/command/InitScoresCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V3/src/command/PrintScoreCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V3/src/command/PrintScoreCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V3/src/domain/StudentScores.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V3/src/domain/StudentScores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V4/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V4/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V4/src/command/AnalizeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V4/src/command/AnalizeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V4/src/command/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V4/src/command/ExitCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V4/src/command/GetScoresCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V4/src/command/GetScoresCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V4/src/command/InitScoresCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V4/src/command/InitScoresCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V4/src/command/PrintScoreCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V4/src/command/PrintScoreCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V4/src/domain/StudentScores.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V4/src/domain/StudentScores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V4/src/ui/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V4/src/ui/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V4/src/ui/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V4/src/ui/MenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V5/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V5/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V5/src/MyApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V5/src/MyApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V5/src/ui/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V5/src/ui/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V6/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V6/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V6/src/MyApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V6/src/MyApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/V6/src/ui/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI-framework/V6/src/ui/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/src/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI-framework/src/InitScoresCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_MySQL/ch08/Q08_L2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/ch08/Q08_L2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/jdbc_ex/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/jdbc_ex/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/jdbc_ex/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/jdbc_ex/dao/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/jdbc_ex/domain/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/jdbc_ex/domain/UserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/test/java/org/scoula/jdbc_ex/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/test/java/org/scoula/jdbc_ex/dao/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/test/java/org/scoula/jdbc_ex/test/CrudTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/test/java/org/scoula/jdbc_ex/test/CrudTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../08_Spring/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../08_Spring/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/App.java" afterDir="false" />
@@ -364,6 +400,7 @@
       <workItem from="1719809985165" duration="143000" />
       <workItem from="1719810143702" duration="9000" />
       <workItem from="1720068757646" duration="1211000" />
+      <workItem from="1721206495013" duration="9000" />
     </task>
     <servers />
   </component>

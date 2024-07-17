@@ -2,9 +2,10 @@ package ui;
 
 import command.Command;
 
+//따로 관리되던 메뉴명과 Command를 하나의 클래스로 캡슐화해줌
 public class MenuItem {
-    String title;
-    Command command;
+    String title; //1. 학생수 입력
+    Command command; //InitScoresCommand
 
     public MenuItem(String title, Command command){
         this.title = title;

@@ -2,7 +2,7 @@ package command;
 
 import basic.Input;
 import domain.StudentScores;
-
+//1번 메뉴인 학생수 입력 기능 처리하는 메소드
 public class InitScoresCommand implements Command {
     StudentScores studentScores = StudentScores.getInstance();
 
