@@ -1,9 +1,9 @@
 package command;
 
-import basic.Input;
 import domain.StudentScores;
-//2번 메뉴인 점수 입력 기능 처리하는 클래스
-public class GetScoresCommand implements command.Command {
+
+//3번 메뉴인 점수 출력 기능 처리하는 클래스
+public class PrintScoreCommand implements Command {
     StudentScores studentScores = StudentScores.getInstance();
 
     @Override
@@ -11,9 +11,9 @@ public class GetScoresCommand implements command.Command {
         //기존에 저장되어있는 학생들의 점수 리스트를 가져옴
         int [] scores = studentScores.getScores();
 
-        //점수 리스트를 돌면서 사용자한테 입력받은 점수를 넣어줌
+        //점수 리스트를 돌면서 각각의 점수들을 출력해줌
         for(int i = 0; i < scores.length; i++){
-            scores[i] = Input.getInt("scores["+i+"]> ");
+            System.out.println("scores["+i+"]: "+scores[i]);
         }
     }
 }

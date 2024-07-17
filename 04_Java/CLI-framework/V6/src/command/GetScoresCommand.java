@@ -3,7 +3,7 @@ package command;
 import basic.Input;
 import domain.StudentScores;
 //2번 메뉴인 점수 입력 기능 처리하는 클래스
-public class GetScoresCommand implements command.Command {
+public class GetScoresCommand implements Command {
     StudentScores studentScores = StudentScores.getInstance();
 
     @Override

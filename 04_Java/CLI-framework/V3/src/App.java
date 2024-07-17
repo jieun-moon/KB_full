@@ -1,71 +1,42 @@
+import command.Command;
+import command.GetScoresCommand;
+import command.InitScoresCommand;
+import command.PrintScoreCommand;
+import src.command.AnalizeCommand;
+import src.command.ExitCommand;
+
 import java.awt.*;
 import java.util.Scanner;
 
 public class App {
-    int studentNum = 0;
-    int[] scores = null;
-
-    Scanner scanner = new Scanner(System.in);
-
     Menu menu;
+    command.Command[] commands;
 
     public App(){
         //생성자에서 Menu로 객체 생성해서 초기화
         menu = new Menu();
+        //Command 패턴
+        commands = new Command[]{
+                new InitScoresCommand(), //1. 학생수 입력
+                new GetScoresCommand(), //2. 점수 입력
+                new PrintScoreCommand(), //3. 점수 출력
+                new AnalizeCommand(), //4. 분석
+                new ExitCommand(), //5. 종료
+        };
     }
-    private void analize(){
-        int max = 0;
-        int sum = 0;
-        double avg = 0;
-        for (int i = 0; i < scores.length; i++) {
-            max = (max<scores[i]) ? scores[i]:max;
-            sum += scores[i];
-        }
-        avg = (double)sum/studentNum;
-        System.out.println("최고 점수: " + max);
-        System.out.println("평균 점수: " + avg);
-    }
-
-    //getStudentNum: 1번 메뉴인 학생 수 입력 기능 처리하는 메소드
-    public void getStudentNum(){
-        System.out.print("학생수> ");
-        studentNum = Integer.parseInt(scanner.nextLine());
-        scores = new int[studentNum];
-    }
-
-    public void getScores() {
-        for (int i = 0; i < scores.length; i++) {
-            System.out.print("scores[" + i + "]> ");
-            scores[i] = Integer.parseInt(scanner.nextLine());
-        }
-    }
-
-    public void printScore(){
-        for (int i = 0; i < scores.length; i++) {
-            System.out.println("scores[" + i + "]: " + scores[i]);
-        }
-    }
-
-
 
     //executeCommand: 만들어둔 메소드들을 사용자의 입력값에 따라 호출
     public void executeCommand(int selectNo){
-        if(selectNo==1){
-            getStudentNum();
-        } else if (selectNo == 2 ) {
-            getScores();
-        } else if (selectNo == 3 ) {
-            printScore();
-        } else if(selectNo == 4 ) {
-            analize();
-        }
-
+        //인덱스로 접근해야 하기 때문에 사용자가 입력한 번호에서 -1 해줌
+        Command command = commands[selectNo-1];
+        //가져온 command의 execute가 실행된다.
+        command.execute();
     }
+
     public void run(){
         while(true){
-            menu.printMenu();
             int selectNo = menu.getSelect();
-            executeCommand(selectNo);
+
             if (selectNo == 5 ) {
                 break;
             }
