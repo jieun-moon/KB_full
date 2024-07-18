@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="scoulalic.main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/scoulalic_main_jar</output-path>
+    <root id="archive" name="scoulalic.main.jar">
+      <element id="module-output" name="scoulalic.main" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="136a13b3-52c9-4aa1-bbe4-3c0988eee8c6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodo/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodoSpring/src/main/java/org/scoula/todo/config/ProjectConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodoSpring/src/main/java/org/scoula/todo/travel/dao/TravelDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodoSpring/src/main/java/org/scoula/todo/travel/dao/TravelDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodoSpring/src/main/java/org/scoula/todo/travel/dao/TravelDaoImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodoSpring/src/main/java/org/scoula/todo/travel/domain/TravelVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodoSpring/travel.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodoSpring/travel.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/scoulacli_main_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/scoulacli.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/scoulacli.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scoulalib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Scoulalib.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/lib/cli/command/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/lib/cli/command/ExitCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/lib/cli/ui/Input.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/lib/cli/ui/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/lib/cli/ui/MenuItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudentStore/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StudentStore/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/exception/BadMenuException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/exception/BadMenuException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/TodoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/lib/cli/ui/TodoApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/AddTodoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/AddTodoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/DeleteTodoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/DeleteTodoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/DetailTodoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/DetailTodoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/PrintTodoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/PrintTodoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/UpdateTodoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/command/UpdateTodoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/dao/TodoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/dao/TodoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/dao/TodoListDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/dao/TodoListDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/domain/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/TodoApp/src/main/java/org/scoula/todo/domain/Todo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch01/sec09/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch01/sec11/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch01/sec12/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch01/verify/Example.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec01/VariableExchangeExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec01/VariableInitializationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec01/VariableUseExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec02/ByteExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec02/IntegerLiteralExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec02/LongExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec06/StringExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec08/CastingExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec09/StringConcatExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec10/PrimitiveAndStringConversionExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec12/PrintfExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch02/sec13/ScannerExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec01/IncreaseDecreaseOperatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec03/OverflowUnderflowExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec04/AccuracyExample1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec04/AccuracyExample2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec06/CompareOperatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec07/LogicalOperatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec10/AssignmentOperatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch03/sec11/ConditionalOperationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch04/sec02/IfDiceExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch04/sec02/IfElseExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch04/sec02/IfElseIfElseExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch04/sec02/IfExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch04/sec02/IfNestedExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch04/sec03/SwitchExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec06/exam01/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec06/exam01/CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam01/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam01/CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam02/Korean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam02/KoreanExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam03/Korean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam03/KoreanExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam04/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam04/CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam05/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec07/exam05/CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam01/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam01/CalculatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam02/Computer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam02/ComputerExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam03/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam03/CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam04/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec08/exam04/CalculatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec09/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec09/CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec10/exam01/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec10/exam01/CalculatorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec10/exam02/Television.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec10/exam02/TelevisionExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec11/exam02/Earth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec11/exam02/EarthExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec14/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/sec14/CarExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/ch06/비전공D반_문지은.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/practice/MySql.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/practice/MySqlExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/practice/trapezoid.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/scoulacli">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="scoulacli" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2jPFbA3iIygvWWZDi6sS7DfSoQV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="136a13b3-52c9-4aa1-bbe4-3c0988eee8c6" name="Changes" comment="" />
+      <created>1721280874405</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721280874405</updated>
+      <workItem from="1721280875466" duration="168000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
