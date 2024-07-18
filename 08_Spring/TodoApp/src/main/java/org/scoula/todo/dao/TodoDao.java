@@ -5,11 +5,11 @@ import org.scoula.todo.domain.Todo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TodoDao {
+public class TodoDao implements TodoListDao {
     //private 생성자와 getInstance로 객체 리턴 => 싱글톤 패턴
     private static TodoDao instance = new TodoDao();
 
-    public static TodoDao getInstance() {
+    public static TodoListDao getInstance() {
         return instance;
     }
 
@@ -29,11 +29,13 @@ public class TodoDao {
     }
 
     //전체 할일 목록 가져오는 메소드(Read)
+    @Override
     public List<Todo> getList() {
         return list;
     }
 
     //해당 아이디의 할 일 가져오는 메소드(Read)
+    @Override
     public Todo getTodo(int id) {
         for (Todo todo : list) {
             //리스트를 돌면서 받아온 id값과 일치하는 todo 찾기
@@ -45,11 +47,13 @@ public class TodoDao {
     }
 
     //리스트에 새로운 todo 추가하는 메소드(Create)
+    @Override
     public void add(Todo todo) {
         list.add(todo);
     }
 
     //해당 todo를 새로운 값으로 변경해주는 메소드(Update)
+    @Override
     public void update(Todo todo) {
         for(int i = 0; i < list.size(); i++) {
             //리스트를 돌면서 id를 비교해서 해당 id의 todo를 새로운 todo로 변경
@@ -60,6 +64,7 @@ public class TodoDao {
     }
 
     //해당 아이디의 todo를 리스트에서 삭제해주는 메소드(delete)
+    @Override
     public void delete(int id) {
         for (int i = 0; i < list.size(); i++) {
             //리스트에서 해당 todo를 찾아서 삭제해준다
