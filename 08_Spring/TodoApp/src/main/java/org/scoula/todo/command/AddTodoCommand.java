@@ -6,6 +6,7 @@ import org.scoula.todo.dao.TodoDao;
 import org.scoula.todo.dao.TodoListDao;
 import org.scoula.todo.domain.Todo;
 
+//메뉴3. 추가 Command 클래스
 public class AddTodoCommand implements Command {
     TodoListDao dao = TodoDao.getInstance();
 
@@ -16,7 +17,9 @@ public class AddTodoCommand implements Command {
         String description = Input.getLine("설명: ");
         System.out.println("------------------------------------------");
 
+        //사용자한테 받아온 제목과 설명으로 새로운 할 일 생성
         Todo todo = Todo.builder().title(title).description(description).done(false).build();
+        //할 일 목록에 추가
         dao.add(todo);
 
         System.out.println();
