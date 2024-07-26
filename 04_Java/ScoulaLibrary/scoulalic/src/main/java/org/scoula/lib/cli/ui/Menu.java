@@ -1,15 +1,12 @@
-package ui;
+package org.scoula.lib.cli.ui;
 
-import basic.Input;
-import command.Command;
+import org.scoula.lib.cli.command.Command;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
-    //인터페이스(List)는 객체를 못 만듦
-    //List는 업캐스팅을 못해서 MenuItem에 넣은 것
-   List<MenuItem> menus;
+    ArrayList<MenuItem> menus;
 
    //메뉴의 개수를 받아와서 메뉴 리스트를 초기화해줌
     //ArrayList는 upcasting 가능(클래스로 업캐스팅 했음)

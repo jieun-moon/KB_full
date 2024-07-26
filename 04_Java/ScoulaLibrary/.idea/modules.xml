@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ScoulaLibrary.iml" filepath="$PROJECT_DIR$/ScoulaLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/scoulalic.iml" filepath="$PROJECT_DIR$/scoulalic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scoulalic.main.iml" filepath="$PROJECT_DIR$/.idea/modules/scoulalic.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scoulalic.test.iml" filepath="$PROJECT_DIR$/.idea/modules/scoulalic.test.iml" />
     </modules>
   </component>
 </project>

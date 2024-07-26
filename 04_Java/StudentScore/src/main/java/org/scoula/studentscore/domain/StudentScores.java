@@ -1,4 +1,4 @@
-package domain;
+package org.scoula.studentscore.domain;
 
 public class StudentScores {
     int studentNum = 0;
