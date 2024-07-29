@@ -21,10 +21,14 @@ public class BoardServlet extends HttpServlet {
         out.print("<html><body>");
 
         //Enumeration: 반복자 돌 때 사용
+        //받아온 파라미터들의 이름만을 열거자로 만듦
         Enumeration<String> enu = request.getParameterNames();
 
+//        hasMoreElements: 요소가 더 있는지 체크해서 없을때까지 돈다
         while (enu.hasMoreElements()) {
+//            nextElement: 열거자를 돌면서 다음 요소를 가져옴
             String name = enu.nextElement();
+//            열거자에 저장된 이름으로 해당 값들을 가져옴
             String value = request.getParameter(name);
             out.print(name + " : " + value + "<br>");
         }
