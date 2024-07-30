@@ -9,7 +9,8 @@ import java.io.PrintWriter;
 @WebServlet("/sports")
 public class SportsServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setCharacterEncoding("UTF-8"); //한글 깨짐 방지 - 있을 때와 없을 때 결과 확인
+        //filter에서 만들었기 때문에 필요없어짐
+//        request.setCharacterEncoding("UTF-8"); //한글 깨짐 방지 - 있을 때와 없을 때 결과 확인
 
 //        sports에 저장되어있는 값이 여러개이므로 getParameterValuse를 통해 배열로 받아옴
         String[] sports = request.getParameterValues("sports");
