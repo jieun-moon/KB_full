@@ -27,6 +27,7 @@
     </logger>
 
     <logger name="org.springframework.beans">
+<!--        어느 수준으로 로그를 찍을지 결정해준다(debug가 info보다 낮은 수준)-->
         <level value="info"/>
     </logger>
 
