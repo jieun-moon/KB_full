@@ -1,4 +1,4 @@
-package org.scoula.ex03.controller;
+package org.scoula.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -21,4 +21,6 @@ public class HomeController {
         //"name"(키의 이름): jsp로 넘어감
         return "index"; //View의 이름
     }
+
+
 }

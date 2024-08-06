@@ -1,6 +1,9 @@
 package org.scoula.config;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.multipart.MultipartResolver;
+import org.springframework.web.multipart.support.StandardServletMultipartResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
@@ -11,7 +14,7 @@ import org.springframework.web.servlet.view.JstlView;
 //@EnableWebMvc: mvc패턴(frontController 패턴)사용하겠다
 @EnableWebMvc
 //controller 패키지 내부에서 컴포넌트를 찾아라
-@ComponentScan(basePackages = {"org.scoula.controller", "org.scoula.ex03.controller"}) //Spring MVC용 컴포넌트 등록을 위한 스캔 패키지
+@ComponentScan(basePackages = {"org.scoula.controller", "org.scoula.exception", "org.scoula.ex03.controller"}) //Spring MVC용 컴포넌트 등록을 위한 스캔 패키지
 public class ServletConfig implements WebMvcConfigurer {
 
     @Override
@@ -32,5 +35,13 @@ public class ServletConfig implements WebMvcConfigurer {
         bean.setSuffix(".jsp");
 
         registry.viewResolver(bean);
+    }
+
+    //Servlet 3.0파일 업로드 사용시 - MultipartResolver 빈 등록
+    //Multipart 인코딩을 해석해주는 기능
+    @Bean
+    public MultipartResolver multipartResolver(){
+        StandardServletMultipartResolver resolver = new StandardServletMultipartResolver();
+        return resolver;
     }
 }

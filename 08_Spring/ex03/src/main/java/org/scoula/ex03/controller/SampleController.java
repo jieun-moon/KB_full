@@ -3,8 +3,13 @@ package org.scoula.ex03.controller;
 import lombok.extern.log4j.Log4j;
 import org.scoula.ex03.dto.SampleDTO;
 import org.scoula.ex03.dto.TodoDTO;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -123,5 +128,67 @@ public class SampleController {
         log.info("page: " + page);
 
         return "sample/ex04";
+    }
+
+    //localhost:8080/sample/ex05
+    @GetMapping("/ex05")
+    public void ex05(){
+        log.info("/ex05..........");
+//        404에러: 1) 요청 경로가 잘못된 경우, 2) JSP 파일이 없는 경우
+    }
+
+    @GetMapping("/ex06")
+    public String ex06(RedirectAttributes ra){
+        log.info("/ex06..........");
+        ra.addAttribute("name", "AAA");
+        ra.addAttribute("age", 10);
+
+        return "redirect:/sample/ex06-2";
+    }
+
+    @GetMapping("/ex07")
+    //@ResponseBody: application/json으로 응답해라
+    //SampleDTO: json 문자열
+    public @ResponseBody SampleDTO ex07(){
+        log.info("/ex07..........");
+
+        SampleDTO dto = new SampleDTO();
+        dto.setAge(10);
+        dto.setName("홍길동");
+
+        return dto;
+    }
+
+    @GetMapping("/ex08")
+    //ResponseEntity<String>: Body 객체 타입
+    public ResponseEntity<String> ex08(){
+        log.info("/ex08..........");
+
+        String msg="{\"name\": \"홍길동\"}";
+
+        HttpHeaders header = new HttpHeaders();
+        header.add("Content-Type", "application/json;charset=UTF-8");
+
+        //msg: body, header: 헤더, HttpStatus: 상태코드
+        return new ResponseEntity<>(msg, header, HttpStatus.OK);
+    }
+
+    //localhost:8080/sample/exUpload
+    @GetMapping("/exUpload")
+    //일반적으로 GET요청(리턴타입 void)이 올때 모양새
+    //POST요청 (리턴타입 String)
+    public void exUpload(){
+        log.info("/exUpload..........");
+    }
+
+    //exUploadPost: form에 action에 있는 경로와 일치해야함
+    @PostMapping("/exUploadPost")
+    //files: input의 name과 변수명(files)이 일치해야함
+    public void exUploadPost(ArrayList<MultipartFile> files){
+        for(MultipartFile file : files){
+            log.info("---------------------------");
+            log.info("name:" + file.getOriginalFilename());
+            log.info("size:" + file.getSize());
+        }
     }
 }
