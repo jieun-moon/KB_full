@@ -14,22 +14,25 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 @Log4j
 //CommonExceptionAdvice: 이 클래스 자체도 controller(지금까지 봤던 Controller 매커니즘 그대로 적용)
 public class CommonExceptionAdvice {
+    //모든 예외에 대한 처리
     //@ExceptionHandler: 경로 대신에 catch할 예외 제시
     //Exception 캐치할거다.(모든 예외는 Exception이 처리하겠다는 뜻)
     @ExceptionHandler(Exception.class)
     public String except(Exception ex, Model model){
         log.error("Exception ......" + ex.getMessage());
-        model.addAttribute("exception", ex);
+        model.addAttribute("exception", ex); //예외 객체 모델에 추가해서 뷰에 전달
         log.error(model);
         //return "error_page": /error_page.jsp로 가겠다
-        return "error_page";
+        return "error_page"; //뷰 이름 반환
     }
 
     //404 상황
     //@ExceptionHandler: 어떤 예외를 catch 할거야 나타냄
+    //NoHandlerFoundException 예외를 처리해주겠다
     @ExceptionHandler(NoHandlerFoundException.class)
     //HttpStatus: enumerate. 모든 응답처리에 대해 상수 처리
     //NOT_FOUND: 404
+    //HTTP 상태 코드를 404로 설정하겠다
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public String handle404(NoHandlerFoundException ex){
         return "custom404";

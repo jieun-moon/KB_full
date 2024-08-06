@@ -11,6 +11,8 @@
 <%--메서드는 반드시 post. (get은 안됨)--%>
   <form action="/sample/exUploadPost" method="post" enctype="multipart/form-data">
     <div>
+<%--      해당 input의 name이 받아주는 메소드의 매개변수로 연결된다(중요)--%>
+<%--      하나의 input에는 file 하나만 업로드하는 것이 디폴트다--%>
       <input type="file" name="files">
     </div>
     <div>

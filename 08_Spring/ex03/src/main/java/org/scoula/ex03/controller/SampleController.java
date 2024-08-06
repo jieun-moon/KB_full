@@ -131,23 +131,29 @@ public class SampleController {
     }
 
     //localhost:8080/sample/ex05
+    //return값이 void일 경우 요청 url을 기준으로 jsp 파일을 찾는다
+    // /WEB-INF/views/sample/ex05.jsp 파일을 찾게 됨
     @GetMapping("/ex05")
     public void ex05(){
         log.info("/ex05..........");
 //        404에러: 1) 요청 경로가 잘못된 경우, 2) JSP 파일이 없는 경우
     }
 
+    //http://localhost:8080/sample/ex06
+    //해당 경로 접근시 http://localhost:8080/sample/ex06-2?name=AAA&age=10로 리다이렉트함
     @GetMapping("/ex06")
     public String ex06(RedirectAttributes ra){
         log.info("/ex06..........");
+        //리다이렉트 시 요청 파라미터로 name과 age를 추가해준다
         ra.addAttribute("name", "AAA");
         ra.addAttribute("age", 10);
-
+        //리다이렉트 시 "redirect:" 접두사를 사용한다
         return "redirect:/sample/ex06-2";
     }
 
+    //http://localhost:8080/sample/ex07
     @GetMapping("/ex07")
-    //@ResponseBody: application/json으로 응답해라
+    //@ResponseBody: application/json으로 응답해라. 반환된 객체가 JSON 형식으로 변환되어 보여지도록 한다
     //SampleDTO: json 문자열
     public @ResponseBody SampleDTO ex07(){
         log.info("/ex07..........");
@@ -159,17 +165,21 @@ public class SampleController {
         return dto;
     }
 
+    //http://localhost:8080/sample/ex08
     @GetMapping("/ex08")
     //ResponseEntity<String>: Body 객체 타입
+    //ResponseEntity: json 형태의 body + 응답 헤더
     public ResponseEntity<String> ex08(){
         log.info("/ex08..........");
 
-        String msg="{\"name\": \"홍길동\"}";
+        String msg="{\"name\": \"홍길동\"}"; //body가 들어갈 json 형태의 문자열
 
         HttpHeaders header = new HttpHeaders();
+        //Httpheaders 객체 생성 후 Content-Type 헤더 설정
         header.add("Content-Type", "application/json;charset=UTF-8");
 
         //msg: body, header: 헤더, HttpStatus: 상태코드
+        //ResponseEntity 객체 내에 바디, 헤더, 상태코드(200) 반환
         return new ResponseEntity<>(msg, header, HttpStatus.OK);
     }
 
@@ -181,7 +191,9 @@ public class SampleController {
         log.info("/exUpload..........");
     }
 
+    //http://localhost:8080/sample/exUploadPost
     //exUploadPost: form에 action에 있는 경로와 일치해야함
+    //MultipartFile 하나가 업로드한 파일 하나에 대응한다
     @PostMapping("/exUploadPost")
     //files: input의 name과 변수명(files)이 일치해야함
     public void exUploadPost(ArrayList<MultipartFile> files){
