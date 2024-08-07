@@ -22,8 +22,10 @@ class TimeMapperTest {
     @Test
     @DisplayName("TimeMapper의 getTime()")
     public void getTime() {
-        log.info(timeMapper.getClass().getName());
-        log.info(timeMapper.getTime());
+//        구현체가 뭔지 확인해보는 것
+        log.info(timeMapper.getClass().getName()); //TimeMapper의 실제 클래스 이름
+//        실제 메서드
+        log.info(timeMapper.getTime()); //TimeMapper의 getTime() 메소드 호출
     }
 
     @Test

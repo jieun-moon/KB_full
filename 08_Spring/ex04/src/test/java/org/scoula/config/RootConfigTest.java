@@ -25,6 +25,7 @@ class RootConfigTest {
     @Autowired
     private DataSource dataSource;
 
+    //Spring Context에서 sqlSessionFactory Bean을 주입받아옴
     @Autowired
     private SqlSessionFactory sqlSessionFactory;
 
@@ -42,13 +43,14 @@ class RootConfigTest {
     @Test
     public void testSqlSessionFactory() {
         try(
-                SqlSession session = sqlSessionFactory.openSession();
-                Connection con = session.getConnection();
+                SqlSession session = sqlSessionFactory.openSession(); //sqlSessionFactory를 SqlSession로 open
+                Connection con = session.getConnection(); //SqlSession로 Connection 연결
                 ){
                     log.info(session);
                     log.info(con);
 
         } catch (Exception e) {
+            //예외 발생 시 테스트 실패 처리
             fail(e.getMessage());
         }
     }

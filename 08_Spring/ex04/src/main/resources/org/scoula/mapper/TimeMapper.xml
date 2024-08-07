@@ -4,5 +4,13 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.scoula.mapper.TimeMapper">
 
-    <select id="getTime2" resultType="java.lang.String"></select>
+<!--    인터페이스에서 정한 메서드명이 id가 됨-->
+<!--    resultType: 자바의 어떤 타입으로 mapping 할거냐-->
+<!--    insert/update/delete의 리턴 타입: int로 고정-->
+<!--    select는 매번 타입이 달라짐-->
+<!--    select문의 경우 resultType이 필수로 들어가야 한다(return할 데이터 타입)-->
+<!--    쿼리가 길어질 경우 SQL문과 메소드가 섞이기 때문에 interface 분리-->
+    <select id="getTime2" resultType="java.lang.String">
+        SELECT SYSDATE()
+    </select>
 </mapper>
