@@ -1,6 +1,7 @@
 package org.scoula.board.mapper;
 
 import org.apache.ibatis.annotations.Select;
+import org.scoula.board.domain.BoardAttachmentVO;
 import org.scoula.board.domain.BoardVO;
 
 import java.util.List;
@@ -28,4 +29,12 @@ public interface BoardMapper {
 
 //    해당 no 값을 가진 게시글을 삭제
     public int delete(Long no);
+
+    public void createAttachment(BoardAttachmentVO attach);
+
+    public List<BoardAttachmentVO> getAttachmentList(Long bno);
+
+    public BoardAttachmentVO getAttachment(Long no);
+
+    public int deleteAttachment(Long no);
 }

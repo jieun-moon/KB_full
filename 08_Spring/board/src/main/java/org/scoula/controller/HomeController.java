@@ -12,7 +12,7 @@ public class HomeController {
         //informnation 레벨로 출력하라
         log.info("=================> HomeController /");
         return "index"; //View의 이름
-
+//        return "redirect:/board/list";
         //System.out.println(); 이제부터 안씀
         //콘솔 출력은 개발자를 위한 설정이므로
     }
