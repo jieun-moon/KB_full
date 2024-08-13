@@ -23,11 +23,14 @@ public class JDBCUtil {
 
             //MySQL JDBC 드라이버 로드
             Class.forName(driver);
+//            Class.forName(driver);
 
             //DriverManager를 사용해서 데이터베이스 연결 객체 생성
-            conn = DriverManager.getConnection(url, id, password);
+            conn = DriverManager.getConnection(url,id,password);
+
+//            conn = DriverManager.getConnection(url, id, password);
         } catch (Exception e){
-            //예외 발생 시 스택 트레이스를 출력
+//            //예외 발생 시 스택 트레이스를 출력
             e.printStackTrace();
         }
     }
@@ -38,6 +41,8 @@ public class JDBCUtil {
     }
 
     //데이터베이스 연결을 닫는 메소드
+
+
     public static void close(){
         try{
             if(conn != null){

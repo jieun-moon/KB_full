@@ -5,149 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8dc601a-90d0-45b2-84f2-d12768ef594c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/jdbc_ex.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/src/main/java/org/example/ConnectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/src/main/java/org/example/ConnectionTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/src/main/java/org/example/InsertUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/src/main/java/org/example/SelectUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/src/main/java/org/example/UserDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/src/main/java/org/example/common/JDBCUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/src/main/java/org/example/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/src/main/java/org/example/domain/UserVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../04_Java/jdbc_ex/src/test/java/org/example/domain/UserVOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05_MySQL/.idea/05_MySQL.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/app/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/app/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/app/domain/Todo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec01/ConnectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec02/InsertManyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec02/InsertManyTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec02/InsertOneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec03/FindOneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec03/FindTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec04/UpdateManyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec04/UpdateOneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec05/DeleteManyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec05/DeleteOneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/TodoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/command/AddTodoCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/command/DeleteTodoCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/command/ListTodoCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/command/UpdateTodoCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/dao/TodoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/domain/Todo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dynamic-web/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dynamic-web/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dynamic-web/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dynamic-web/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scoula/ex02/ResponseServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/action/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/action/header2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/action/main2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/action/main3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/copyright.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/count.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/count_view.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/currentTime.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/exception/divide.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/exception/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/loginInfo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/main.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/out.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/session/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/session/loginForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/session/loginInfo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/session/logout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/session/request.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03/src/main/java/org/scoula/ex03/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03/src/main/java/org/scoula/ex03/SportsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03/src/main/webapp/WEB-INF/board_form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03/src/main/webapp/login_form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex03/src/main/webapp/sports.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/build/classes/java/main/org/scoula/lib/cli/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/build/classes/java/main/org/scoula/lib/cli/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/build/classes/java/main/org/scoula/lib/cli/ui/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/build/classes/java/main/org/scoula/lib/cli/ui/Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/build/libs/ScoulaCli-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/build/libs/ScoulaCli-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/build/tmp/compileJava/compileTransaction/stash-dir/Input.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/src/main/java/org/scoula/lib/cli/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/src/main/java/org/scoula/lib/cli/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/src/main/java/org/scoula/lib/cli/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/src/main/java/org/scoula/lib/cli/command/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/src/main/java/org/scoula/lib/cli/command/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/src/main/java/org/scoula/lib/cli/command/ExitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/src/main/java/org/scoula/lib/cli/exception/BadMenuException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/src/main/java/org/scoula/lib/cli/exception/BadMenuException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/src/main/java/org/scoula/lib/cli/ui/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/src/main/java/org/scoula/lib/cli/ui/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/src/main/java/org/scoula/lib/cli/ui/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/src/main/java/org/scoula/lib/cli/ui/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/src/main/java/org/scoula/lib/cli/ui/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/ScoulaLibrary/scoulalic/src/main/java/org/scoula/lib/cli/ui/MenuItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/artifacts/scoulacli_main_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/modules/scoulacli.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/modules/scoulacli.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/Scoulalib.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/.gradle/8.5/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/.gradle/8.5/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/.gradle/8.5/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/.gradle/8.5/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/.gradle/8.5/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/.gradle/8.5/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/basic/Input.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/command/Command.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/Input.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/Scoulalib/scoulacli/src/main/java/org/scoula/lib/cli/ui/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentScore/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/StudentScore/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentScore/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/StudentScore/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentScore/src/main/java/org/scoula/studentscore/StudentScoreApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/StudentScore/src/main/java/org/scoula/studentscore/StudentScoreApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentScore/src/main/java/org/scoula/studentscore/domain/StudentScores.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/StudentScore/src/main/java/org/scoula/studentscore/domain/StudentScores.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentScore/src/main/java/org/scoula/studentscore/service/StudentScoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_Java/StudentScore/src/main/java/org/scoula/studentscore/service/StudentScoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/StudentStore.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/src/main/java/org/scoula/lib/cli/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/src/main/java/org/scoula/lib/cli/command/AnalizeCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/src/main/java/org/scoula/lib/cli/command/GetScoresCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/src/main/java/org/scoula/lib/cli/command/InitScoresCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../04_Java/StudentStore/src/main/java/org/scoula/lib/cli/command/PrintScoreCommand.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodo/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodo/src/main/java/org/scoula/todo/Context/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodo/src/main/java/org/scoula/todo/Context/Context.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodo/src/main/java/org/scoula/todo/TodoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/ScoulaTodo/src/main/java/org/scoula/todo/TodoApp.java" afterDir="false" />
@@ -162,6 +47,29 @@
       <change beforePath="$PROJECT_DIR$/../../05_MySQL/ch09/Q09-L2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/ch09/Q09-L2.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/jdbc_ex/common/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/jdbc_ex/common/JDBCUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/jdbc_ex/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/jdbc_ex/dao/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/app/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/app/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/app/domain/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/app/domain/Todo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec01/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec01/ConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec02/InsertManyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec02/InsertManyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec02/InsertManyTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec02/InsertManyTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec02/InsertOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec02/InsertOneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec03/FindOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec03/FindOneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec03/FindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec03/FindTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec04/UpdateManyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec04/UpdateManyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec04/UpdateOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec04/UpdateOneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec05/DeleteManyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec05/DeleteManyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec05/DeleteOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/java/sec05/DeleteOneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/java_ex/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/command/AddTodoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/command/AddTodoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/command/DeleteTodoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/command/DeleteTodoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/command/ListTodoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/command/ListTodoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/command/UpdateTodoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/command/UpdateTodoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/dao/TodoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/dao/TodoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/domain/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_MongoDB/todoapp/src/main/java/org/scoula/todo/domain/Todo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dynamic-web/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dynamic-web/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../08_Spring/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../08_Spring/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../08_Spring/MemoApp/src/main/java/org/scoula/memo/MemoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_Spring/MemoApp/src/main/java/org/scoula/memo/MemoApp.java" afterDir="false" />
@@ -246,6 +154,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Servlet" />
+        <option value="HTML File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -259,9 +169,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2jidFUOIg8XmTPbGQk1aDHaoX7l" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -269,22 +179,41 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "Gradle.Build ex02.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 9.0.91.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/KB_Fullstack/07_Jsp&Sevlet/ex02/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "fileTemplates",
+    "settings.editor.selected.configurable": "File.Encoding",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\KB_Fullstack\07_Jsp&amp;Sevlet\ex02\src\main\webapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\KB_Fullstack\07_Jsp&amp;Sevlet\ex02\src\main\webapp\session" />
+      <recent name="C:\KB_Fullstack\07_Jsp&amp;Sevlet\ex02\src\main\webapp\action" />
+      <recent name="C:\KB_Fullstack\07_Jsp&amp;Sevlet\ex02\src\main\webapp\exception" />
+      <recent name="C:\KB_Fullstack\07_Jsp&amp;Sevlet\ex02\src\main\webapp" />
+      <recent name="C:\KB_Fullstack\07_Jsp&amp;Sevlet\ex02\src\main\webapp\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="openRunningConfigInTab" value="true" />
+  </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9.0.91" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.91" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="Tomcat 9.0.91" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat9.0.91" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="Gradle : org.scoula : ex02-1.0-SNAPSHOT.war">
@@ -389,10 +318,24 @@
       <option name="presentableId" value="Default" />
       <updated>1721873728545</updated>
       <workItem from="1721873729635" duration="8294000" />
+      <workItem from="1721888180087" duration="7560000" />
+      <workItem from="1722213355268" duration="5086000" />
+      <workItem from="1722218532800" duration="11118000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/action/header.jsp</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

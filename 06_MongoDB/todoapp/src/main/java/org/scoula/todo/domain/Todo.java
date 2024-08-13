@@ -1,2 +1,4 @@
-package org.scoula.todo.domain;public class Todo {
+package org.scoula.todo.domain;
+
+public class Todo {
 }

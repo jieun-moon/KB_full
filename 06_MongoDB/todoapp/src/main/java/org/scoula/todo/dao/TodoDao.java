@@ -1,2 +1,4 @@
-package org.scoula.todo.dao;public class TodoDat {
+package org.scoula.todo.dao;
+
+public class TodoDao {
 }

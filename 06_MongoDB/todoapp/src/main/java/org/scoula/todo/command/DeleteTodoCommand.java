@@ -1,2 +1,4 @@
-package org.scoula.todo.command;public class DeleteTodoCommand {
+package org.scoula.todo.command;
+
+public class DeleteTodoCommand {
 }

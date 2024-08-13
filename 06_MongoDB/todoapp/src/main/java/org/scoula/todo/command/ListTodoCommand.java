@@ -1,2 +1,5 @@
-package org.scoula.todo.command;public class ListTodoCommand {
+package org.scoula.todo.command;
+
+public class ListTodoCommand implements Command{
+
 }

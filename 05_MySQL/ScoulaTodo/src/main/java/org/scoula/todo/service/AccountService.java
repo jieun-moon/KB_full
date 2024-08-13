@@ -41,10 +41,12 @@ public class AccountService {
 
     private UserVO getUser() throws SQLException, UsernameDuplicateException, PasswordMissmatchException {
         String username = Input.getLine("사용자 ID: ");
+        //사용자한테 ID 입력받은 후 중복 체크
         checkDuplication(username);
 
         String password = Input.getLine("비밀번호: ");
         String password2 = Input.getLine("비밀번호 확인: ");
+        //비밀번호와 비밀번호 확인 란이 같지 않으면 PasswordMissmatchException 발생시킴
         if(!password.equals(password2)){
             throw new PasswordMissmatchException();
         }
@@ -52,6 +54,7 @@ public class AccountService {
         String name = Input.getLine("이름: ");
         String role = Input.getLine("역할: ");
 
+        //사용자한테 받아온 데이터들로 UserVO 객체 생성
         return UserVO.builder()
                 .id(username)
                 .password(password)
