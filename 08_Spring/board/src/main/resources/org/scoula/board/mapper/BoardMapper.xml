@@ -24,9 +24,9 @@
 <!--    #{no}: set parameter 명시하는 곳.-->
 <!--    #{no}: 매개변수가 한개일 경우 이름은 중요하지 않음-->
 <!--    #{} 부분에는 매번 넣어주는 변수가 들어간다-->
-    <select id="get" resultType="BoardVO">
-        select * from tbl_board where no = #{no}
-    </select>
+<!--    <select id="get" resultType="BoardVO">-->
+<!--        select * from tbl_board where no = #{no}-->
+<!--    </select>-->
 
 <!--    tbl_board 테이블의 title, content, writer 컬럼에 각각의 값을 집어넣는다-->
 <!--    LAST_INSERT_ID(): 가장 최근에 발급한 아이디-->
@@ -62,31 +62,39 @@
         where no = #{no}
     </update>
 
+<!--    해당 no 컬럼과 일치하는행을 삭제-->
     <delete id="delete">
-        delete from tbl_board where no = #{no}
+        delete from tbl_board where no=#{no}
     </delete>
 
+<!--tbl_board_attachment 테이블에 하나의 행을 추가한다-->
     <insert id="createAttachment">
         insert into tbl_board_attachment(filename, path, content_type, size, bno)
         values(#{filename}, #{path}, #{contentType}, #{size}, #{bno})
     </insert>
 
+<!--   where bno = #{bno}: 글 번호로 목록 꺼내기-->
+<!--    해당 게시글 번호(bno)와 일치하는 첨부파일 목록을 가져온다-->
     <select id="getAttachmentList" resultType="BoardAttachmentVO">
         select * from tbl_board_attachment
         where bno = #{bno}
         order by filename
     </select>
 
+<!--    where no = #{no}: PK로 찾는것-->
+<!--    해당 파일 번호(no)와 일치하는 첨부 파일을 가져온다-->
     <select id="getAttachment" resultType="BoardAttachmentVO">
         select * from tbl_board_attachment
         where no = #{no}
     </select>
 
+<!--    해당 파일 번호(no)와 일치하는 첨부 파일을 삭제한다-->
     <delete id="deleteAttachment">
         delete from tbl_board_Attachment
         where no = #{no}
     </delete>
 
+<!--ano: select 절에서 정한 컬럼명-->
     <resultMap id="attachmentMap" type="org.scoula.board.domain.BoardAttachmentVO">
         <id column="ano" property="no"/>
         <result column="bno" property="bno"/>
@@ -106,6 +114,22 @@
         <result column="update_date" property="updateDate"/>
         <collection property="attaches" resultMap="attachmentMap"/>
     </resultMap>
+
+    <!--    기존꺼는 resultType이 board였음-->
+    <!--        private List<BoardAttachmentVO> attaches;-->
+    <!--    이 부분을 MyBatis가 자동으로 못해줌. -->
+<!--    #{} 부분에는 매번 넣어주는 변수가 들어간다-->
+<!--    board 테이블과 board_attachment 테이블을 조인해서 같이 조회한다-->
+<!--    첨부파일이 없는 게시글도 있으므로 board 테이블기준으로 -->
+    <select id="get" resultMap="boardMap">
+        select b.*, a.no as ano, a.bno, a.filename, a.path,
+               a.content_type, a.size, a.reg_date as a_reg_date
+        from tbl_board b
+                 left outer join tbl_board_attachment a
+                on b.no = a.bno
+        where b.no = #{no}
+        order by filename
+    </select>
 
 </mapper>
 

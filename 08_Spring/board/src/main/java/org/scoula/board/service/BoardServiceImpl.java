@@ -22,6 +22,7 @@ import static org.scoula.common.util.UploadFiles.upload;
 @Service //Service 역할을 하는 Bean 등록
 @RequiredArgsConstructor //final 필드로 생성자 추가
 public class BoardServiceImpl implements BoardService {
+//    업로드 시 해당 경로가 없으면 생성하도록 처리해뒀으므로 폴더가 없어도 상관없다
     private final static String BASE_DIR = "c:/upload/board";
     //final 멤버가 붙은 인자에 대해 생성자를 만들어주겠다
     //생성자가 하나 있다면 그 생성자로 주입 가능
@@ -60,16 +61,21 @@ public class BoardServiceImpl implements BoardService {
     public void create(BoardDTO board) {
         log.info("create......" + board);
 //DTO를 VO로 변경해서 mapper의 메소드 호출
-        BoardVO vo = board.toVo();
-        mapper.create(vo);
+        BoardVO boardVO = board.toVo();
+        mapper.create(boardVO); //boardVO: 후속 작업을 위해 필요함
 //        변경된 vo의 no를 가져와서 다시 dto에 반영
         //no은 DTO객체가 아닌 VO에 들어감
 //        board.setNo(vo.getNo());
+//        Insert문이 작동될 때 첨부파일 작동갯수
 
         //파일 업로드 처리
         List<MultipartFile> files = board.getFiles();
         if(files != null && !files.isEmpty()) {//첨부 파일이 있는 경우
-            upload(vo.getNo(), files);
+            upload(boardVO.getNo(), files);
+//            boardVO.getNo(): FK
+            //            예외발생: 자동 롤백
+//            예외없으면 자동 커밋
+
         }
 
     }
@@ -92,14 +98,22 @@ public class BoardServiceImpl implements BoardService {
         return mapper.delete(no) == 1;
     }
 
+//    해당 게시물에 참조 파일들을 추가해주는 메소드
     private void upload(Long bno, List<MultipartFile> files) {
         for(MultipartFile part : files) {
+//            첨부파일 목록에서 파일을 하나씩 꺼내서 비어있는지 확인
+//            비어있으면, 다음 파일 확인
+//            continue: 다음 아이템을 실행(다음 for문을 돎)
             if(part.isEmpty()) continue;
             try{
+//                업로드 경로 생성 후 BoardAttachmentVO 객체 생성
+//                UploadFiles.upload(BASE_DIR, part): 여기서 예외 던짐
                 String uploadPath = UploadFiles.upload(BASE_DIR, part);
                 BoardAttachmentVO attach = BoardAttachmentVO.of(part, bno, uploadPath);
-                mapper.createAttachment(attach);
+//                BoardAttachmentVO 테이블에 참조파일 데이터 하나 추가
+                mapper.createAttachment(attach); // 테이블에 추가
             } catch (IOException e) {
+//                throw new RuntimeException(e): RuntimeException으로 바꿔서 리턴
                 throw new RuntimeException(e); //@Transactional에서 감지, 자동 rollback
             }
         }

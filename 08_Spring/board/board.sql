@@ -23,14 +23,25 @@ VALUES
 
 SELECT * FROM tbl_board order by no desc;
 
+# tbl_board_attachment 테이블을 생성
 DROP TABLE IF EXISTS tbl_board_attachment;
 CREATE TABLE tbl_board_attachment (
     no INTEGER AUTO_INCREMENT PRIMARY KEY,
     filename VARCHAR(256) NOT NULL, -- 원본 파일 명
-    path VARCHAR(256) NOT NULL, -- 서버에서의 파일 경로
+    path VARCHAR(256) NOT NULL, -- 서버에서의 파일 경로. 업로드 할때 신경써야함(파일들간에 중복이 발생하면 안된다)
+#     원본 파일명과 서버에서의 파일 경로에 올라간 파일명이 다를 수 있음
+#     유일한 이름이 되도록 조작해야하고, 다운로드 받을 때는 원본 파일명으로 받아져야 함
     content_type VARCHAR(56), -- content-type
     size INTEGER, -- 파일의 크기
-    bno INTEGER NOT NULL, -- 게시글 번호, FK
-    reg_date DATETIME DEFAULT now(),
+    bno INTEGER NOT NULL, -- 게시글 번호, FK (중요!) 어느 게시판의 첨부파일이냐
+    reg_date DATETIME DEFAULT now(), -- 등록 날짜로, 수정날짜는 없음(=수정기능 없음)
     CONSTRAINT FOREIGN KEY(bno) REFERENCES tbl_board(no)
 );
+
+select b.*, a.no as ano, a.bno, a.filename, a.path,
+       a.content_type, a.size, a.reg_date as a_reg_date
+from tbl_board b
+         left outer join tbl_board_attachment a
+                         on b.no = a.bno
+where b.no = 22
+order by filename

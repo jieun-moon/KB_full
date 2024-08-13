@@ -19,15 +19,21 @@ import java.util.List;
 public class BoardDTO {
     private Long no;
     private String title;
-    private String content;
     private String writer;
+    private String content;
     private Date regDate;
     private Date updateDate;
 
     //첨부 파일
     private List<BoardAttachmentVO> attaches;
 
+//    VO와 달라지게 함(MultipartFile에 대한 Lsit)
+//    VO랑 다르게 클래스 사용 가능
     List<MultipartFile> files = new ArrayList<>(); //실제 업로드된 파일(Multipart) 목록
+//DTO는 form에 대응. files: <input type="file" name="files">
+//    files 자체는 board 테이블하고 상관 없음
+//    업로드 기능 캡슐화 => 객체 지향에서 중요한 사항
+//    캡슐화 시켰으므로 컨트롤러 수정 없음
 
     //static 메소드. of: 이름, 리턴: BoardDTO
     //static: 클래스로 접근
@@ -38,6 +44,7 @@ public class BoardDTO {
                 .no(vo.getNo())
                 .title(vo.getTitle())
                 .writer(vo.getWriter())
+                .content(vo.getContent())
                 .attaches(vo.getAttaches())
                 .regDate(vo.getRegDate())
                 .updateDate(vo.getUpdateDate())
@@ -51,11 +58,12 @@ public class BoardDTO {
         return BoardVO.builder()
                 .no(no)
                 .title(title)
-                .content(content)
                 .writer(writer)
+                .content(content)
                 .attaches(attaches)
                 .regDate(regDate)
                 .updateDate(updateDate)
                 .build();
     }
+//
 }
