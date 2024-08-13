@@ -1,0 +1,4 @@
+rootProject.name = 'todoapp'
+include ':mylib'
+project(':mylib').projectDir=new File('C:\\KB_Fullstack\\04_Java\\myapp')
+
