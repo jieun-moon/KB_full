@@ -11,22 +11,18 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
-//@EnableWebMvc : mvc 패턴(frontcontroller 패턴) 사용하겠다
 @EnableWebMvc
-//controller 패키지 내부에서 컴포넌트를 찾아라
-@ComponentScan(basePackages = {
-        "org.scoula.exception",
-        "org.scoula.controller"
-})
+@ComponentScan(basePackages = {"org.scoula.controller", "org.scoula.exception"}) //Spring MVC용 컴포넌트 등록을 위한 스캔 패키지
 public class ServletConfig implements WebMvcConfigurer {
+
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry
-                .addResourceHandler("/resources/**") // url이 /resources/로 시작하는 경로
-                .addResourceLocations("/resources/"); // webapp/resources/ 경로
+                .addResourceHandler("/resources/**") //url이 /resources/로 시작하는 모든 경로
+                .addResourceLocations("/resources/"); //webapp/resources/경로로 매핑
     }
 
-    //    View의 이름을 설정해주는 메소드
+    //jsp view resolver 설정
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         InternalResourceViewResolver bean = new InternalResourceViewResolver();
@@ -38,9 +34,10 @@ public class ServletConfig implements WebMvcConfigurer {
         registry.viewResolver(bean);
     }
 
-    //    multipart 해석을 위한 메소드
+    //Servlet 3.0파일 업로드 사용시 - MultipartResolver 빈 등록
+    //Multipart 인코딩을 해석해주는 기능
     @Bean
-    public MultipartResolver multipartResolver() {
+    public MultipartResolver multipartResolver(){
         StandardServletMultipartResolver resolver = new StandardServletMultipartResolver();
         return resolver;
     }
