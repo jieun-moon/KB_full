@@ -1,0 +1,98 @@
+plugins {
+  id 'java'
+  id 'war'
+}
+
+group 'org.scoula'
+version '1.0-SNAPSHOT'
+
+repositories {
+  mavenCentral()
+}
+
+//springVersion과 springSecurityVersion은 다름
+ext {
+  junitVersion = '5.10.0'
+  springVersion = '5.3.37'
+  lombokVersion = '1.18.30'
+  springSecurityVersion='5.8.13'
+}
+
+sourceCompatibility = '1.17'
+targetCompatibility = '1.17'
+
+tasks.withType(JavaCompile) {
+  options.encoding = 'UTF-8'
+}
+
+dependencies {
+  //데이터베이스
+  implementation 'com.mysql:mysql-connector-j:8.1.0'
+  //HikariCP: DBCP, DataSource
+  implementation 'com.zaxxer:HikariCP:2.7.4'
+
+  //tx: transaction의 약자(여러개의 연속되는 SQL문을 하나의 논리적 명령문으로 해석해주는 것)
+  //여러개 중에 하나가 실패하면, 전체가 실패한걸로 간주하고 Rollback
+  //여러개 중에 전부가 모두 성공하면 확정 commit
+  implementation "org.springframework:spring-tx:${springVersion}"
+  implementation "org.springframework:spring-jdbc:${springVersion}"
+
+  implementation 'org.mybatis:mybatis:3.4.6'
+  implementation 'org.mybatis:mybatis-spring:1.3.2'
+
+
+  //스프링
+  implementation("org.springframework:spring-context:${springVersion}")
+          {exclude group: 'commons-logging', module: 'commons-logging'}
+  implementation "org.springframework:spring-webmvc:${springVersion}"
+  implementation 'javax.inject:javax.inject:1'
+
+  //AOP
+  implementation 'org.aspectj:aspectjrt:1.9.20'
+  implementation 'org.aspectj:aspectjweaver:1.9.20'
+
+  //JSP, SERVLET, JSTL
+  implementation('javax.servlet:javax.servlet-api:4.0.1')
+  compileOnly 'javax.servlet.jsp:jsp-api:2.1'
+  implementation 'javax.servlet:jstl:1.2'
+
+  //Logging
+  implementation 'org.slf4j:slf4j-api:2.0.9'
+  runtimeOnly 'org.slf4j:jcl-over-slf4j:2.0.9'
+  runtimeOnly 'org.slf4j:slf4j-log4j12:2.0.9'
+  implementation 'log4j:log4j:1.2.17'
+
+  implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4:1.16'
+  implementation 'org.apache.logging.log4j:log4j-api:2.0.1'
+  implementation 'org.apache.logging.log4j:log4j-core:2.0.1'
+
+  //xml내 한글 처리
+  implementation 'xerces:xercesImpl:2.12.2'
+
+  //Lombok
+  compileOnly "org.projectlombok:lombok:${lombokVersion}"
+  annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+  //Jackson-Json 처리
+  implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.4'
+
+  //테스트
+  testImplementation "org.springframework:spring-test:${springVersion}"
+  testCompileOnly"org.projectlombok:lombok:${lombokVersion}"
+  testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+
+  testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+  testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+  //보안
+  //위의 두개는 필수
+  //아래 두개는 jsp에서 taglib 사용을 위한 것
+  implementation("org.springframework.security:spring-security-web:${springSecurityVersion}")
+  implementation("org.springframework.security:spring-security-config:${springSecurityVersion}")
+  implementation("org.springframework.security:spring-security-core:${springSecurityVersion}")
+  implementation("org.springframework.security:spring-security-taglibs:${springSecurityVersion}")
+}
+
+test {
+useJUnitPlatform()}
