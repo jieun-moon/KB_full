@@ -17,7 +17,8 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class BoardDTO {
-    private Long no;
+    private Long no; //wrapper 클래스 사용(숫자 0 배정은 null인지 아닌지 알 수 없음)
+    //null 배정: 설정을 안했다
     private String title;
     private String writer;
     private String content;

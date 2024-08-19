@@ -57,7 +57,7 @@ public class BoardServiceImpl implements BoardService {
     //RuntimeException 경우만 자동 rollback.
     @Transactional
     @Override
-    public void create(BoardDTO board) {
+    public BoardDTO create(BoardDTO board) {
         log.info("create......" + board);
 //DTO를 VO로 변경해서 mapper의 메소드 호출
         BoardVO boardVO = board.toVo();
@@ -76,25 +76,33 @@ public class BoardServiceImpl implements BoardService {
 //            예외없으면 자동 커밋
 
         }
+//      boardVO의 no에 해당하는 DTO 찾아오기
+        return get(boardVO.getNo());
 
     }
 
     @Override
-    public boolean update(BoardDTO board) {
+    public BoardDTO update(BoardDTO board) {
         log.info("update......" + board);
-
+//        mapper의 update를 호출해서 행 수정
+        mapper.update(board.toVo());
 //        transaction처리가 필요하므로 나중에 @Transational 불여야함
 //        지금은 하나뿐이라 할 필요 없음
 //        mapper의 update를 호출해서 수정된 행의 수가 1일 경우 true 반환
-        return mapper.update(board.toVo()) == 1;
+//        바뀐 행을 가져와서 DTO로 반환
+        return get(board.getNo());
     }
 
     @Override
-    public boolean delete(Long no) {
+    public BoardDTO delete(Long no) {
         log.info("delete......" + no);
+//        delete는 삭제 전에 DTO를 저장해둬야 한다
+        BoardDTO board = get(no);
+//      해당 no를 가지고 있는 데이터 삭제
+        mapper.delete(no);
 
 //        삭제된 행의 수가 1인지 확인해서 boolean반환
-        return mapper.delete(no) == 1;
+        return board;
     }
 
     private void upload(Long bno, List<MultipartFile> files) {

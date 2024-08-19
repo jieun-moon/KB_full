@@ -71,7 +71,7 @@ dependencies {
   compileOnly "org.projectlombok:lombok:${lombokVersion}"
   annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 
-  //Jackson-Json 처리
+  //Jackson-Json 처리 (객체를 json 문자열로, 문자열을 실제 자바 객체로 바꿔주는 것, 직렬화-역직렬화)
   implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.4'
 
   //테스트
@@ -79,9 +79,12 @@ dependencies {
   testCompileOnly"org.projectlombok:lombok:${lombokVersion}"
   testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 
-
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+  //RestTemplate
+  implementation 'org.apache.httpcomponents:httpcore:4.4.15'
+  implementation 'org.apache.httpcomponents:httpclient:4.5.13'
 }
 
 test {
