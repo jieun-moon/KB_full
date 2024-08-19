@@ -38,6 +38,7 @@ public class UploadFiles {
 //    Math.log(size): 자리수
 //    파일 크기를 사람이 읽기 쉬운 형식으로 변환
 //    1,225,957 바이트 > "1.2MB"
+//    class는 static으로 접근. static이 아닐 경우 new로 생성자, 객체 만들어서 접근
     public static String getFormatSize(Long size){
 //        파일 크기가 0 이하일 경우 "0"을 반환
         if(size <= 0)
@@ -51,15 +52,33 @@ public class UploadFiles {
         return new DecimalFormat("#,##0.#").format(size/Math.pow(1024, digitGroups)) + " " + units[digitGroups];
     }
 
+//    controller에서 다운받을때 과정을 담은 코드
+//    파일의 다운로드를 처리해주는 메소드
     public static void download(HttpServletResponse response, File file, String orgName) throws IOException {
+//        response의 contentType을 다운로드 파일로 설정
+//        응답 헤더의 일부
         response.setContentType("application/download");
-        response.setContentLength((int)file.length());
+//        파일의 크기를 response에 설
+        response.setContentLength((int)file.length()); //length: 파일 크기
 
+//        한글 파일명을 URL 인코딩(필수)
         String filename = URLEncoder.encode(orgName, "UTF-8"); //한글 파일명인 경우 인코딩 필수
+//        일반 헤더 설정(첫번째 인자: 헤더의 key, 두번째 인자: 값)
+//        Content-Disposition: 디폴트 파일명 제시
+//        주의사항: url 인코딩은 UTF-8
+//        response 헤더에 파일 다운로드 정보 설정
+//        따로 함수가 없는 경우에는 setHeader 함수에 정보를 설정해줘야 한다
         response.setHeader("Content-Disposition", "attachment; filename=\"" + filename + "\"");
+//여기까지가 헤더 설정
 
+//        우리가 보낼 파일이 텍스트인지, 이미지인지 모름 =>
+//          outputStream:
+//        response의 형태를 알 수 없기 때문에 OutputStream 사용
         try(OutputStream os = response.getOutputStream();
             BufferedOutputStream bos = new BufferedOutputStream(os)) {
+            //        (원본 파일의 Path, outputstream)
+//            copy: 여기서는 복사보다는 전송의 개념으로 사용
+//            원본 파일을 스트림으로 전송(복사)
             Files.copy(Paths.get(file.getPath()), bos);
         }
     }
