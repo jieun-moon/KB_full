@@ -7,7 +7,9 @@
 </head>
 <body>
     <h1>login</h1>
+<%--    SecurityConfig에서 loginProcessingUrl() 메소드에 넣은 url 경로와 action 값이 일치한다--%>
     <form name="f"  action="/security/login" method="post">
+<%--        csrf 토큰을 POST로 날려서 인증 정보를 보낸다--%>
         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
         <table>
             <tr>

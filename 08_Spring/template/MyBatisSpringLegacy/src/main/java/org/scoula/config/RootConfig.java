@@ -22,7 +22,7 @@ import javax.sql.DataSource;
 @PropertySource({"classpath:/application.properties"})
 //MyBatis에게 알려줌.
 //org.scoula.mapper: 여기에 등록되 Bean은 자동 등록. 자동 DI된다는 뜻
-@MapperScan(basePackages = {})
+//@MapperScan(basePackages = {})
 public class RootConfig {
     //application.properties 파일에서 값을 읽어와서 변수에 주입
     @Value("${jdbc.driver}") String driver;
