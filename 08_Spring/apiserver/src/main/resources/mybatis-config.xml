@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+<!--        my_batis > myBatis로 만들어줘서 java도 인식 할 수 있도록 만들어줌-->
+<!--        snakeCase를 CamelCase로 변환-->
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+    </settings>
+
+    <typeAliases>
+<!--        별칭으로 만들어서 mapper 타입을 간략히 사용할 수 있게 해줌-->
+        <package name="org.scoula.security.account.domain" />
+    </typeAliases>
+
+</configuration>
