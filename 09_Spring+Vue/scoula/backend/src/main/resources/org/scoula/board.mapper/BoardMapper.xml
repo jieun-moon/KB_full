@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--MyBatis 매퍼 설정 파일-->
+<mapper namespace="org.scoula.board.mapper.BoardMapper">
+
+    <!--    getList오타내면 오류: Invalid bound statement-->
+<!--    인터페이스의 메소드와 xml 매퍼의 구문하고 일치하는걸 못찾았다-->
+<!--    1) MapperScan에 패키지 경로 등록안했을때-->
+<!--    2) xml에서 namespace가 안 맞을 때-->
+<!--    3) id가 안 맞았을 때-->
+<!--    getList 메서드를 정의하고, 결과 타입을 BoardVO로 설정-->
+<!--    select 타입에는 resultType 필수-->
+    <!--        <의 디폴트는 태그 연산자인데 <![을 사용해서 방지-->
+<!--     비교식이라는 걸 알려주기 위해 CDATA 명시-->
+    <!--        CDATA는 xml의 규칙(Mybatis의 규칙이 아님)-->
+    <select id="getList" resultType="BoardVO">
+        <![CDATA[
+            select * from tbl_board
+        ]]>
+    </select>
+
+<!--    #{no}: set parameter 명시하는 곳.-->
+<!--    #{no}: 매개변수가 한개일 경우 이름은 중요하지 않음-->
+<!--    #{} 부분에는 매번 넣어주는 변수가 들어간다-->
+<!--    <select id="get" resultType="BoardVO">-->
+<!--        select * from tbl_board where no = #{no}-->
+<!--    </select>-->
+
+<!--    tbl_board 테이블의 title, content, writer 컬럼에 각각의 값을 집어넣는다-->
+<!--    LAST_INSERT_ID(): 가장 최근에 발급한 아이디-->
+<!--    keyProperty: VO 객체의 key는 어디에 있는지(setNo로 값을 넣어라-->
+<!--    keyColumn: 테이블의 컬럼명이 뭔지-->
+<!--    order: 이 쿼리를 언제 시작할건지(INSERT문 후에 실행)-->
+    <insert id="create">
+-- 1단계
+        insert into tbl_board(title, content, writer)
+        values (#{title}, #{content}, #{writer})
+
+--         keyProperty="no": vo객체
+-- keyColumn="no": 테이블의 컬럼이 뭔지
+-- order="AFTER": insert 먼저 하고 호출
+-- 2단계
+        <selectKey resultType="Long" keyProperty="no" keyColumn="no" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+-- 3단계: setNo해서 값을 넣어라
+    </insert>
+
+<!--    항상 숫자이기 때문에 resultType 기술할 필요 없음-->
+<!-- 사용자 수정: title = #{title}, content = #{content}, writer = #{writer},-->
+<!-- where 절의 primary key로 구성-->
+<!--    tbl_board의 no가 일치하는 행에서 title, content, writer 컬럼을 우리가 넣어준 값으로 수정-->
+<!--    update_date는 현재 시간으로 수정-->
+    <update id="update">
+        update tbl_board set
+                             title = #{title},
+                             content = #{content},
+                             writer = #{writer},
+                             update_date = now()
+        where no = #{no}
+    </update>
+
+    <delete id="delete">
+        delete from tbl_board where no=#{no}
+    </delete>
+
+    <insert id="createAttachment">
+        insert into tbl_board_attachment(filename, path, content_type, size, bno)
+        values(#{filename}, #{path}, #{contentType}, #{size}, #{bno})
+    </insert>
+
+<!--   where bno = #{bno}: 글 번호로 목록 꺼내기-->
+    <select id="getAttachmentList" resultType="BoardAttachmentVO">
+        select * from tbl_board_attachment
+        where bno = #{bno}
+        order by filename
+    </select>
+
+<!--    where no = #{no}: PK로 찾는것-->
+    <select id="getAttachment" resultType="BoardAttachmentVO">
+        select * from tbl_board_attachment
+        where no = #{no}
+    </select>
+
+    <delete id="deleteAttachment">
+        delete from tbl_board_Attachment
+        where no = #{no}
+    </delete>
+
+<!--ano: select 절에서 정한 컬럼명-->
+    <resultMap id="attachmentMap" type="org.scoula.board.domain.BoardAttachmentVO">
+        <id column="ano" property="no"/>
+        <result column="bno" property="bno"/>
+        <result column="filename" property="filename"/>
+        <result column="path" property="path"/>
+        <result column="contentType" property="contentType"/>
+        <result column="size" property="size"/>
+        <result column="a_reg_date" property="regDate"/>
+    </resultMap>
+
+    <resultMap id="boardMap" type="org.scoula.board.domain.BoardVO">
+        <id column="no" property="no"/>
+        <result column="title" property="title"/>
+        <result column="content" property="content"/>
+        <result column="writer" property="writer"/>
+        <result column="reg_date" property="regDate"/>
+        <result column="update_date" property="updateDate"/>
+        <collection property="attaches" resultMap="attachmentMap"/>
+    </resultMap>
+
+    <!--    기존꺼는 resultType이 board였음-->
+    <!--        private List<BoardAttachmentVO> attaches;-->
+    <!--    이 부분을 MyBatis가 자동으로 못해줌. -->
+    <select id="get" resultMap="boardMap">
+        select b.*, a.no as ano, a.bno, a.filename, a.path,
+               a.content_type, a.size, a.reg_date as a_reg_date
+        from tbl_board b
+                 left outer join tbl_board_attachment a
+                on b.no = a.bno
+        where b.no = #{no}
+        order by filename
+    </select>
+
+</mapper>
+
