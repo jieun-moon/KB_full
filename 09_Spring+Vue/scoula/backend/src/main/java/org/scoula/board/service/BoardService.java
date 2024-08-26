@@ -1,6 +1,7 @@
 package org.scoula.board.service;
 
 import org.scoula.board.domain.BoardAttachmentVO;
+import org.scoula.board.domain.BoardVO;
 import org.scoula.board.dto.BoardDTO;
 
 import java.util.List;

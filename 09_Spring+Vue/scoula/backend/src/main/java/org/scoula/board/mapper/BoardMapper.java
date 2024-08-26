@@ -1,5 +1,6 @@
 package org.scoula.board.mapper;
 
+import org.apache.ibatis.annotations.Select;
 import org.scoula.board.domain.BoardAttachmentVO;
 import org.scoula.board.domain.BoardVO;
 
