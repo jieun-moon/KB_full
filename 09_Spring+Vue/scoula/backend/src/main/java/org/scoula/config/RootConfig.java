@@ -25,8 +25,8 @@ import javax.sql.DataSource;
 @PropertySource({"classpath:/application.properties"})
 //MyBatis에게 알려줌.
 //org.scoula.mapper: 여기에 등록되 Bean은 자동 등록. 자동 DI된다는 뜻
-@MapperScan(basePackages = {"org.scoula.board.mapper"})
-@ComponentScan(basePackages = {"org.scoula.board.service"})
+@MapperScan(basePackages = {"org.scoula.board.mapper", "org.scoula.member.mapper"})
+@ComponentScan(basePackages = {"org.scoula.board.service", "org.scoula.member.service"})
 @Slf4j
 @EnableTransactionManagement //트랜잭션 관리 설정
 public class RootConfig {
