@@ -15,7 +15,7 @@ export default {
       icon: 'fa-solid fa-plane-departure',
     },
     {
-      title: '게시판',
+      title: '갤러리',
       url: '/gallery/list',
       icon: 'fa-solid fa-images',
     },

@@ -1,10 +1,14 @@
 <script setup>
 import { useRouter } from 'vue-router';
+import { useAuthStore } from '@/stores/auth';
+
+const store = useAuthStore();
 
 const router = useRouter();
 // 루트 경로로 이동 시켜주는 함수
 const logout = (e) => {
   //로그아웃
+  store.logout(); //인증 스토어의 logout 메소드 호출해서 로그아웃 처리
   router.push('/');
 };
 </script>
