@@ -12,12 +12,13 @@
 <!--    3) id가 안 맞았을 때-->
 <!--    getList 메서드를 정의하고, 결과 타입을 BoardVO로 설정-->
 <!--    select 타입에는 resultType 필수-->
+    <!--        <의 디폴트는 태그 연산자인데 <![을 사용해서 방지-->
+<!--    비교식이라는 걸 알려주기 위해 CDATA 명시-->
+    <!--        CDATA는 xml의 규칙(Mybatis의 규칙이 아님)-->
+
     <select id="getList" resultType="BoardVO">
-<!--        <의 디폴트는 태그 연산자인데 <![을 사용해서 방지-->
--- 비교식이라는 걸 알려주기 위해 CDATA 명시
-<!--        CDATA는 xml의 규칙(Mybatis의 규칙이 아님)-->
         <![CDATA[
-            select * from tbl_board
+            select * from tbl_board order by no desc
         ]]>
     </select>
 
@@ -85,7 +86,7 @@
     </select>
 
     <delete id="deleteAttachment">
-        delete from tbl_board_Attachment
+        delete from tbl_board_attachment
         where no = #{no}
     </delete>
 

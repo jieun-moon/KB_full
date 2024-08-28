@@ -7,6 +7,7 @@ import java.io.*;
 import java.io.File;
 import java.net.URLEncoder;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.DecimalFormat;
 import java.io.IOException;
@@ -39,11 +40,14 @@ public class UploadFiles {
         if(size <= 0)
             return "0";
         final String[] units = new String[]{"Bytes", "KB", "MB", "GB", "TB"};
+//        파일 크기가 어느 단위에 속하는지 계산(예: KB, MB 등)
         int digitGroups = (int) (Math.log10(size) / Math.log10(1024));
+//        파일 크기를 계산된 단위로 변환하고
 //        #,##0.#: 소숫점 이하 한자리만 출력
         return new DecimalFormat("#,##0.#").format(size/Math.pow(1024, digitGroups)) + " " + units[digitGroups];
     }
 
+//    파일의 다운로드를 처리해주는 메소드 (저장용)
     public static void download(HttpServletResponse response, File file, String orgName) throws IOException {
         response.setContentType("application/download");
         response.setContentLength((int)file.length());
@@ -53,7 +57,28 @@ public class UploadFiles {
 
         try(OutputStream os = response.getOutputStream();
             BufferedOutputStream bos = new BufferedOutputStream(os)) {
+//            원본 파일을 스트림으로 전송(복사)
             Files.copy(Paths.get(file.getPath()), bos);
+        }
+    }
+
+//    이미지를 다운로드하는 메소드(출력용)
+    public static void downloadImage(HttpServletResponse response, File file){
+        //File file: avatar 이미지
+        try{
+            Path path = Path.of(file.getPath());
+            String mimeType = Files.probeContentType(path); //파일의 MIME 타입 추출
+            response.setContentType(mimeType); //response의 타입 설정
+            response.setContentLength((int) file.length()); //response의 길이 설정
+
+//            파일을 클라이언트로 전송하기 위해 출력 스트림 사용
+            try(OutputStream os = response.getOutputStream();
+            BufferedOutputStream bos = new BufferedOutputStream(os)){
+                Files.copy(path, bos);
+            }
+        }
+        catch (Exception e){
+            throw new RuntimeException(e);
         }
     }
 }

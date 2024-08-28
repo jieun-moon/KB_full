@@ -9,10 +9,10 @@ import javax.servlet.ServletContext;
 public class SecurityInitializer extends AbstractSecurityWebApplicationInitializer {
     //문자셋 필터
     private CharacterEncodingFilter encodingFilter(){
-        CharacterEncodingFilter filter = new CharacterEncodingFilter();
-        filter.setEncoding("UTF-8");
-        filter.setForceEncoding(true);
-        return filter;
+        CharacterEncodingFilter encodingFilter = new CharacterEncodingFilter();
+        encodingFilter.setEncoding("UTF-8");
+        encodingFilter.setForceEncoding(true);
+        return encodingFilter;
     }
 
 

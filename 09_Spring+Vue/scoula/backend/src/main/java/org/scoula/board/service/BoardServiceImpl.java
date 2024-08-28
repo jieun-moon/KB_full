@@ -25,7 +25,7 @@ public class BoardServiceImpl implements BoardService {
     private final static String BASE_DIR = "c:/upload/board";
     //final 멤버가 붙은 인자에 대해 생성자를 만들어주겠다
     //생성자가 하나 있다면 그 생성자로 주입 가능
-    final private BoardMapper mapper;
+    private final BoardMapper mapper;
 
 
     @Override
@@ -48,6 +48,8 @@ public class BoardServiceImpl implements BoardService {
         //NoSuchElementException::new = RuntimeException
         //데이터 베이스에 없는 Long no 발생시켰을 때 예외 발생
         BoardDTO board = BoardDTO.of(mapper.get(no));
+
+        log.info("=====================" + board);
         //만약 board 객체가 null이면 "NoSuchElementException::new"예외 발생, null이 아니면 해당 객체 반환
         return Optional.ofNullable(board)
                 .orElseThrow(NoSuchElementException::new);
@@ -84,12 +86,21 @@ public class BoardServiceImpl implements BoardService {
     @Override
     public BoardDTO update(BoardDTO board) {
         log.info("update......" + board);
+        BoardVO boardVO = board.toVo();
+        log.info("update...... " + boardVO);
+
+        mapper.update(boardVO);
 //        mapper의 update를 호출해서 행 수정
-        mapper.update(board.toVo());
+//        mapper.update(board.toVo());
 //        transaction처리가 필요하므로 나중에 @Transational 불여야함
 //        지금은 하나뿐이라 할 필요 없음
 //        mapper의 update를 호출해서 수정된 행의 수가 1일 경우 true 반환
 //        바뀐 행을 가져와서 DTO로 반환
+        //파일 업로드 처리
+        List<MultipartFile> files = board.getFiles();
+        if(files !=null && !files.isEmpty()){
+            upload(board.getNo(), files);
+        }
         return get(board.getNo());
     }
 
@@ -116,6 +127,7 @@ public class BoardServiceImpl implements BoardService {
             } catch (IOException e) {
 //                throw new RuntimeException(e): RuntimeException으로 바꿔서 리턴
                 throw new RuntimeException(e); //@Transactional에서 감지, 자동 rollback
+                //log.error(e.getMessage());
             }
         }
     }
