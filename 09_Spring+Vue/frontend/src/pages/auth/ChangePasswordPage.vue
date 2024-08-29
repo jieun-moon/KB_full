@@ -23,6 +23,7 @@ const disableSubmit = computed(
 
 const error = ref('');
 
+// 비밀번호 입력 시 오류 메시지 초기화
 const inputPassword = () => (error.value = '');
 
 const resetError = () => (error.value = '');
@@ -34,9 +35,10 @@ const onSubmit = async () => {
   }
 
   try {
+    // 비밀번호 변경 요청을 백엔드(서버)로 전송
     await authApi.changePassword(changePassword);
     alert('비밀번호를 수정했습니다.');
-    router.push({ name: 'profile' });
+    router.push({ name: 'profile' }); //비밀번호 수정 후 프로필 페이지로 이동
   } catch (e) {
     error.value = e.response.data;
   }
@@ -55,6 +57,7 @@ const onSubmit = async () => {
           <i class="fa-solid fa-lock"></i>
           이전 비밀번호:
         </label>
+        <!-- input 이벤트로 입력할 때마다 에러 메시지 초기화 -->
         <input
           type="password"
           class="form-control"
@@ -92,7 +95,10 @@ const onSubmit = async () => {
         />
       </div>
 
+      <!-- 에러 메시지 표시 -->
+      <!-- v-show: false여도 렌더링이 된다. 대신, 화면에 안 보이게 되려면, display: none이 들어가있음 -->
       <div v-if="error" class="text-danger">{{ error }}</div>
+      <!-- disableSubmit: 3개 중에 하나라도 적혀있지 않으면 그 때, false -->
       <button
         type="submit"
         class="btn btn-primary mt-4"

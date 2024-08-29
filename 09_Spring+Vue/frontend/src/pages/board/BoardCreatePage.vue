@@ -13,7 +13,6 @@ const files = ref(null);
 const article = reactive({
   writer: auth.username,
   title: '',
-  content: '', // content 속성을 추가하여 오류를 방지합니다.
   files: null,
 });
 
@@ -80,7 +79,10 @@ const submit = async () => {
         확인
       </button>
 
-      <router-link class="btn btn-primary" :to="{ name: 'board/list' }">
+      <router-link
+        class="btn btn-primary"
+        :to="{ name: 'board/list', query: cr.query }"
+      >
         <i class="fa-solid fa-list"></i>
         목록
       </router-link>

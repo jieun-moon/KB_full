@@ -1,3 +1,5 @@
+import { isAuthenticated } from '@/util/guard';
+
 // 게시판 관련한 라우트를 정의하는 js
 export default [
   {
@@ -17,11 +19,13 @@ export default [
     path: '/board/create',
     name: 'board/create',
     component: () => import('../pages/board/BoardCreatePage.vue'),
+    beforeEnter: isAuthenticated,
   },
   {
     // 게시판 리스트 페이지에 대한 라우트
     path: '/board/update/:no',
     name: 'board/update',
     component: () => import('../pages/board/BoardUpdatePage.vue'),
+    beforeEnter: isAuthenticated,
   },
 ];

@@ -37,6 +37,7 @@ export default {
   async update(member) {
     //아바타 파일 업로드 - multipart 인코딩 필요 -> FormData 객체 사용
     const formData = new FormData();
+    // 변경된 정보를 폼 데이터에 추가
     formData.append('username', member.username);
     formData.append('password', member.password); //password: DTO property 명과 일치시켜야 함
     formData.append('email', member.email);
@@ -60,6 +61,7 @@ export default {
   },
 
   async changePassword(formData) {
+    // 세번째 값을 생략하면 기본값이 json 데이터 형태로 넘어간다
     const { data } = await api.put(
       `${BASE_URL}/${formData.username}/changepassword`,
       formData
