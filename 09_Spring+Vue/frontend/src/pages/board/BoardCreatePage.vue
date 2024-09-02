@@ -10,22 +10,28 @@ const cr = useRoute();
 
 const files = ref(null);
 
+// 게시글 데이터를 관리하는 반응형 객체
 const article = reactive({
   writer: auth.username,
   title: '',
   files: null,
 });
 
+// 글 제목이 없으면 제출 버튼 비활성화
 const disableSubmit = computed(() => !article.title);
 const submit = async () => {
+  // 팝업 떴을 때 취소 누르면 함수 종료
   if (!confirm('등록할까요?')) return;
 
+  // 파일이 선택된 경우, 게시글 객체에 파일 추가
   if (files.value.files.length > 0) {
+    // 실제 파일을 꺼낼 때는 ref로 연결한 변수의 value 안의 files 접근
     //첨부파일 선택이 있는 경우
     article.files = files.value.files;
   }
 
   await boardApi.create(article);
+  // 게시글 생성 후 전체 게시글 목록으로 이동
   router.push('/board/list');
 };
 </script>
@@ -45,8 +51,10 @@ const submit = async () => {
       />
     </div>
 
+    <!-- 첨부파일 입력 필드 -->
     <div class="mb-3 mt-3">
       <label for="files" class="form-label"> 첨부파일 </label>
+      <!-- 다중 선택 가능하도록 multiple 처리 -->
       <input
         type="file"
         class="form-control"

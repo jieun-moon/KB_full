@@ -1,7 +1,7 @@
 <script setup>
 import api from '@/api/boardApi';
 import { ref, reactive, computed, watch } from 'vue';
-import moment from 'moment';
+import moment from 'moment'; // 날짜를 취향대로 formatting
 import { useRoute, useRouter } from 'vue-router';
 
 const cr = useRoute();
@@ -9,6 +9,7 @@ const router = useRouter();
 
 const page = ref({});
 
+// page.value가 바뀌는 동시에 다시 계산된다
 const articles = computed(() => page.value.list);
 
 const pageRequest = reactive({
@@ -35,7 +36,8 @@ watch(cr, async (newValue) => {
 
 const load = async (query) => {
   try {
-    page.value = await api.getList(query);
+    // API 호출을 통해서 게시판 목록을 가져와서 저장한다
+    page.value = await api.getList(query); //page.value의 값이 List<BoardDTO>로 변경
     console.log(page.value);
   } catch {}
 };
@@ -58,9 +60,11 @@ load(pageRequest);
         </tr>
       </thead>
       <tbody>
+        <!-- article은 boardDTO를 의미한다 -->
         <tr v-for="article in articles" :key="article.no">
           <td>{{ article.no }}</td>
           <td>
+            <!-- board/detail, 상세보기 페이지로 이동하면서 파라미터로 게시글의 번호를 넘겨준다 -->
             <router-link
               :to="{
                 name: 'board/detail',
@@ -72,10 +76,13 @@ load(pageRequest);
             </router-link>
           </td>
           <td>{{ article.writer }}</td>
+          <!-- moment 함수를 사용해서 날짜를 formatting 가능 -->
           <td>{{ moment(article.regDate).format('YYYY-MM-DD') }}</td>
         </tr>
       </tbody>
     </table>
+    <!-- d-flex: 수평 정렬 -->
+    <!-- div가 블럭 요소 이므로 default가 수직 정렬이라 d-flex 사용 -->
     <div class="my-5 d-flex">
       <div class="flex-grow-1 text-center">
         <!-- 페이지 네이션 -->
