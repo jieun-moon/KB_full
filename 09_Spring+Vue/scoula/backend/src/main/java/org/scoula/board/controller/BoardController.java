@@ -6,6 +6,8 @@ import org.apache.ibatis.annotations.Delete;
 import org.scoula.board.domain.BoardAttachmentVO;
 import org.scoula.board.dto.BoardDTO;
 import org.scoula.board.service.BoardService;
+import org.scoula.common.pagination.Page;
+import org.scoula.common.pagination.PageRequest;
 import org.scoula.common.util.UploadFiles;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +25,11 @@ import java.util.List;
 public class BoardController {
     private final BoardService service;
 
+    @GetMapping("")
+    public ResponseEntity<Page> getList(PageRequest pageRequest) {
+        return ResponseEntity.ok(service.getPage(pageRequest));
+    }
+
 //    GET :: http://localhost:8080/api/board
 //    GetMapping안에 따옴표는 생략가능
 //    @GetMapping("")
@@ -31,11 +38,11 @@ public class BoardController {
 //    }
 
 //    GET :: http://localhost:8080/api/board
-    @GetMapping("")
-    public ResponseEntity<List<BoardDTO>> getList(){ //리턴타입: BoardDTO의 List
-//        상태코드가 200이고 body 타입이 List<BoardDTO>인 응답 객체를 리턴
-        return ResponseEntity.ok(service.getList());
-    }
+//    @GetMapping("")
+//    public ResponseEntity<List<BoardDTO>> getList(){ //리턴타입: BoardDTO의 List
+////        상태코드가 200이고 body 타입이 List<BoardDTO>인 응답 객체를 리턴
+//        return ResponseEntity.ok(service.getList());
+//    }
 
 //    GET :: http://localhost:8080/api/board/1
 //    특정 게시글 조회
@@ -88,13 +95,16 @@ public class BoardController {
 //        ?: 뭐든지 상관 없다
     }
 
+    //    DELETE :: http://localhost:8080/api/board/download/26
+//    해당하는 경로로 파일을 다운로드
     @GetMapping("/download/{no}")
     public void download(@PathVariable Long no, HttpServletResponse response) throws Exception {
         BoardAttachmentVO attachment = service.getAttachment(no);
         File file = new File(attachment.getPath());
         UploadFiles.download(response, file, attachment.getFilename());
     }
-
+    //    DELETE :: http://localhost:8080/api/board/deleteAttachment/26
+//    해당 첨부파일 삭제
     @DeleteMapping("/deleteAttachment/{no}")
     public ResponseEntity<Boolean> deleteAttachment(@PathVariable Long no) throws Exception {
         return ResponseEntity.ok(service.deleteAttachment(no));

@@ -15,9 +15,9 @@ public interface MemberService {
 //    회원 가입 처리, MemberJoinDTO를 받아 회원 정보를 저장하고, 저장된 회원 정보를 반환
     MemberDTO join(MemberJoinDTO member);
 
-//
+//MemberUpdateDTO 객체 받아와서 업데이트된 회원 정보 반환
     MemberDTO update(MemberUpdateDTO member);
 
-//
+// ChangePasswordDTO 객체를 인자로 받아 비밀번호 변경 작업을 수행
     void changePassword(ChangePasswordDTO changePasswordDTO);
 }

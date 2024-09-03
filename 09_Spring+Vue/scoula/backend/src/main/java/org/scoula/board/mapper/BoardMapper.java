@@ -3,10 +3,14 @@ package org.scoula.board.mapper;
 import org.apache.ibatis.annotations.Select;
 import org.scoula.board.domain.BoardAttachmentVO;
 import org.scoula.board.domain.BoardVO;
+import org.scoula.common.pagination.PageRequest;
 
 import java.util.List;
 
 public interface BoardMapper {
+
+    int getTotalCount();
+    List<BoardVO> getPage(PageRequest pageRequest);
     //BoardVO map(ResultSet rs)를 Mybatis가 자동으로 해줌
     //원리는 Spring DI와 같음
     //*이 setxxx()에 의해서 결정됨.

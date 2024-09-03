@@ -55,6 +55,7 @@
         WHERE username = #{username}
     </update>
 
+<!--    사용자 비밀번호를 업데이트하는 SQL 쿼리-->
     <update id="updatePassword">
         UPDATE tbl_member
         SET
@@ -62,4 +63,5 @@
             update_date = now()
         WHERE username = #{username}
     </update>
+<!--    특정 사용자를 username으로 식별-->
 </mapper>

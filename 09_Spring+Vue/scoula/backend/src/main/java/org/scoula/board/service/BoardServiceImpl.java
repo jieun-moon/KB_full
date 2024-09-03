@@ -6,6 +6,8 @@ import org.scoula.board.domain.BoardAttachmentVO;
 import org.scoula.board.domain.BoardVO;
 import org.scoula.board.dto.BoardDTO;
 import org.scoula.board.mapper.BoardMapper;
+import org.scoula.common.pagination.Page;
+import org.scoula.common.pagination.PageRequest;
 import org.scoula.common.util.UploadFiles;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,6 +29,16 @@ public class BoardServiceImpl implements BoardService {
     //생성자가 하나 있다면 그 생성자로 주입 가능
     private final BoardMapper mapper;
 
+
+    @Override
+    public Page<BoardDTO> getPage(PageRequest pageRequest) {
+//        특정 페이지에 해당하는 게시글 목록을 가져옴
+        List<BoardVO> boards = mapper.getPage(pageRequest);
+//        전체 게시글 수 가져오기
+        int totalCount = mapper.getTotalCount();
+
+        return Page.of(pageRequest, totalCount, boards.stream().map(BoardDTO::of).toList());
+    }
 
     @Override
     public List<BoardDTO> getList() {
@@ -89,6 +101,7 @@ public class BoardServiceImpl implements BoardService {
         BoardVO boardVO = board.toVo();
         log.info("update...... " + boardVO);
 
+//        mapper의 update를 호출해서 행 수정
         mapper.update(boardVO);
 //        mapper의 update를 호출해서 행 수정
 //        mapper.update(board.toVo());
@@ -97,10 +110,13 @@ public class BoardServiceImpl implements BoardService {
 //        mapper의 update를 호출해서 수정된 행의 수가 1일 경우 true 반환
 //        바뀐 행을 가져와서 DTO로 반환
         //파일 업로드 처리
+//        파일 업로드 처리
         List<MultipartFile> files = board.getFiles();
         if(files !=null && !files.isEmpty()){
+//            첨부된 파일이 있을 경우 파일 업로드
             upload(board.getNo(), files);
         }
+//        바뀐 행을 가져와서 DTO로 반환
         return get(board.getNo());
     }
 

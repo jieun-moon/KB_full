@@ -96,13 +96,19 @@ public class MemberServiceImpl implements MemberService {
 
     @Override
     public void changePassword(ChangePasswordDTO changePassword) {
+//        사용자의 비밀번호 가져오기 위해서 DB에서 사용자 정보 조회
         MemberVO member = mapper.get(changePassword.getUsername());
+//        암호화된 비밀번호 비교할 때는 matches 사용(equals 사용X)
+//        입력된 이전 비밀번호와 DB에 저장된 비밀번호가 일치하는지 확인
         if(!passwordEncoder.matches(changePassword.getOldPassword(), member.getPassword())){
+//            일치하지 않으면 비밀번호 불일치 예외 발생
             throw new PasswordMissmatchException();
         }
 
+//        새로운 비밀번호 암호화하여 DTO에 설정
         changePassword.setNewPassword(passwordEncoder.encode(changePassword.getNewPassword()));
 
+//        비밀번호를 DB에 업데이트
         mapper.updatePassword(changePassword);
     }
 }
