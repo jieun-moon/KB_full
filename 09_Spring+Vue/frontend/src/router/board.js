@@ -19,6 +19,7 @@ export default [
     path: '/board/create',
     name: 'board/create',
     component: () => import('../pages/board/BoardCreatePage.vue'),
+    // 라우터 접근 전에 인증 여부 확인
     beforeEnter: isAuthenticated,
   },
   {

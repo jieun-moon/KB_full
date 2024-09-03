@@ -25,10 +25,10 @@ const login = async () => {
   try {
     await auth.login(member); //로그인 핵심. 인증 스토어에서 local storage에 해당 사용자 정보 저장
     if (cr.query.next) {
-      //로그인 후 이동할 페이지가 있는 경우
+      //로그인 후 이동할 페이지가 있는 경우 해당 페이지로 이동
       router.push({ name: cr.query.next });
     } else {
-      //일반 로그인
+      //일반 로그인(이동 페이지 정보가 없는 경우)
       router.push('/'); //로그인 성공시 홈 화면으로 이동
     }
   } catch (e) {

@@ -29,7 +29,7 @@
 /* 페이지 네이션 */
 .pagination-container {
   display: flex;
-  /* column-gap: 10px */
+  /* column-gap: 10px; 내부 요소를 사이의 간경을 10px로 설정 */
 }
 
 .paginate-buttons {
